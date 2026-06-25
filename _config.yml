@@ -1,0 +1,61 @@
+# ============================================================
+#  サイト基本設定 (Jekyll / GitHub Pages)
+#  個人サイト: https://YukiInoueNakata.github.io
+# ============================================================
+
+title: "中田友貴 / Yuki Inoue Nakata"
+description: "立命館大学 総合心理学部 准教授。心理学史・文化心理学・社会心理学・法と心理学・AIを用いた質的研究。"
+author: "Yuki Inoue Nakata (中田友貴)"
+email: "dj.y.nakata@gmail.com"
+
+# 個人サイト (username.github.io) のため baseurl は空
+url: "https://YukiInoueNakata.github.io"
+baseurl: ""
+
+lang_default: "ja"
+
+# --- 外部 ID / リンク (TODO: 実際の URL に差し替え) -------------
+links:
+  researchmap: "https://researchmap.jp/y.i.nakata"
+  google_scholar: ""     # 例: https://scholar.google.com/citations?user=XXXX
+  researchgate: ""
+  orcid: ""
+  github: "https://github.com/YukiInoueNakata"
+  twitter: ""            # 例: https://x.com/yourname
+  ritsumei_psy: "https://www.ritsumei.ac.jp/psy/teacher/nakata/"
+  ritsumei_gshs: "https://www.ritsumei.ac.jp/gshs/teacher/nakata/"
+
+# --- 連絡先 -------------------------------------------------
+contact:
+  email_office: "yinakata@fc.ritsumei.ac.jp"
+  email_personal: "dj.y.nakata@gmail.com"
+
+# --- 研究事例フォーム (KH Coder 方式) -------------------------
+# Google フォームの公開 URL（投稿用）
+bibliography_form_url: ""        # 例: https://forms.gle/xxxxxxxx
+# Google スプレッドシートを「ウェブに公開」した CSV の URL（表示用）
+# ファイル > 共有 > ウェブに公開 > 形式 CSV で取得
+bibliography_csv_url: ""         # 例: https://docs.google.com/spreadsheets/d/e/XXXX/pub?output=csv
+
+# --- ビルド設定 ----------------------------------------------
+markdown: kramdown
+permalink: pretty
+
+collections:
+  programs:
+    output: true
+    permalink: /programs/:name/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+  - serve.ps1
+  - docs
+  - .playwright-mcp

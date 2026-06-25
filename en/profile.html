@@ -1,0 +1,56 @@
+---
+layout: page
+lang: en
+ref: profile
+title: "Profile"
+permalink: /en/profile/
+---
+{% assign t = site.data.i18n.en %}
+{% assign p = site.data.profile %}
+{% assign cv = site.data.cv %}
+
+<div class="profile-head">
+  <img class="profile-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name.en }}">
+  <div class="profile-intro">
+    <h2 class="profile-name">{{ p.name.en }}</h2>
+    <p class="hero-role">{{ p.title.en }}</p>
+    <div class="hero-fields">{% for f in p.fields.en %}<span class="tag">{{ f }}</span>{% endfor %}</div>
+    <p>{{ p.bio_short.en }}</p>
+    {% if site.links.researchmap != "" %}<p><a href="{{ site.links.researchmap }}" target="_blank" rel="noopener">researchmap</a></p>{% endif %}
+  </div>
+</div>
+
+<h2>{{ t.profile.career }}</h2>
+<table class="cv-table"><tbody>
+{% for it in cv.career %}<tr><td class="cv-period">{{ it.pen }}</td><td>{{ it.en }}</td></tr>{% endfor %}
+</tbody></table>
+
+<h2>{{ t.profile.education }}</h2>
+<table class="cv-table"><tbody>
+{% for it in cv.education %}<tr><td class="cv-period">{{ it.pen }}</td><td>{{ it.en }}</td></tr>{% endfor %}
+</tbody></table>
+
+<h2>{{ t.profile.teaching }}</h2>
+<table class="cv-table"><tbody>
+{% for it in cv.teaching %}<tr><td class="cv-period">{{ it.pen }}</td><td>{{ it.inst_en }}<br><span class="cv-sub">{{ it.subj_en }}</span></td></tr>{% endfor %}
+</tbody></table>
+
+<h2>{{ t.profile.awards }}</h2>
+<table class="cv-table"><tbody>
+{% for it in cv.awards %}<tr><td class="cv-period">{{ it.pen }}</td><td>{{ it.en }}</td></tr>{% endfor %}
+</tbody></table>
+
+<h2>{{ t.profile.committees }}</h2>
+<table class="cv-table"><tbody>
+{% for it in cv.committees %}<tr><td class="cv-period">{{ it.pen }}</td><td>{{ it.en }}</td></tr>{% endfor %}
+</tbody></table>
+
+<h2>{{ t.profile.societies }}</h2>
+<table class="cv-table"><tbody>
+{% for it in cv.societies %}<tr><td class="cv-period">{{ it.pen }}</td><td>{{ it.en }}</td></tr>{% endfor %}
+</tbody></table>
+
+<h2>{{ t.profile.grants }}</h2>
+<table class="cv-table"><tbody>
+{% for it in cv.grants %}<tr><td class="cv-period">{{ it.pen }}</td><td>{{ it.en }}</td></tr>{% endfor %}
+</tbody></table>

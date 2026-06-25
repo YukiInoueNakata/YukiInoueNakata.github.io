@@ -1,0 +1,23 @@
+---
+layout: page
+lang: en
+ref: contact
+title: "Contact"
+permalink: /en/contact/
+---
+{% assign c = site.contact %}
+{% assign L = site.links %}
+
+<ul class="contact-list">
+  <li><strong>Affiliation</strong>: College of Comprehensive Psychology / Graduate School of Human Science, Ritsumeikan University</li>
+  <li><strong>Email (university)</strong>: <a href="mailto:{{ c.email_office }}">{{ c.email_office }}</a></li>
+  <li><strong>Email (personal)</strong>: <a href="mailto:{{ c.email_personal }}">{{ c.email_personal }}</a></li>
+</ul>
+
+<h2>Links</h2>
+<ul class="contact-list">
+  {% if L.researchmap != "" %}<li><a href="{{ L.researchmap }}" target="_blank" rel="noopener">researchmap</a></li>{% endif %}
+  {% if L.ritsumei_psy != "" %}<li><a href="{{ L.ritsumei_psy }}" target="_blank" rel="noopener">Ritsumeikan University — Faculty profile (Psychology)</a></li>{% endif %}
+  {% if L.ritsumei_gshs != "" %}<li><a href="{{ L.ritsumei_gshs }}" target="_blank" rel="noopener">Ritsumeikan University — Faculty profile (Human Science)</a></li>{% endif %}
+  {% if L.github != "" %}<li><a href="{{ L.github }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
+</ul>

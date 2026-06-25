@@ -1,0 +1,50 @@
+# ============================================================
+#  プロフィール情報（日英）。
+#  出典: researchmap (y.i.nakata) / 立命館大学 教員紹介（総合心理学部・人間科学研究科）
+# ============================================================
+
+name:
+  ja: "中田 友貴"
+  en: "Yuki Inoue Nakata"
+name_reading: "なかた ゆうき"
+
+title:
+  ja: "立命館大学 総合心理学部 准教授（任期付）"
+  en: "Associate Professor (fixed-term), College of Comprehensive Psychology, Ritsumeikan University"
+
+photo: "/assets/img/profile.jpg"   # TODO: 顔写真を assets/img/profile.jpg に差し替え
+
+# 専門分野
+fields:
+  ja:
+    - "心理学史"
+    - "文化心理学"
+    - "社会心理学"
+    - "法と心理学"
+    - "AIと質的研究"
+  en:
+    - "History of psychology"
+    - "Cultural psychology"
+    - "Social psychology"
+    - "Law and psychology"
+    - "AI in qualitative research"
+
+# 自己紹介（短め・トップ用）
+bio_short:
+  ja: "立命館大学総合心理学部 准教授。心理学が社会に与える影響や社会での受容、そして心理学が社会から受ける影響を研究し、これまでの心理学を見直して未来の心理学のあり方を検討しています。法と心理学（取調べ・裁判員制度）や、AI技術を用いた質的研究にも取り組んでいます。"
+  en: "Associate Professor at the College of Comprehensive Psychology, Ritsumeikan University. I examine how psychology shapes and is received by society—and how society in turn shapes psychology—revisiting its history to consider its future. My work also covers law and psychology (interrogation, the lay-judge system) and the use of AI in qualitative research."
+
+# 略歴（年表）出典: researchmap
+cv:
+  ja:
+    - { year: "2015", text: "立命館大学大学院 文学研究科 人文学専攻 修了" }
+    - { year: "", text: "修士（文学）・博士（文学）（立命館大学）" }
+    - { year: "2020", text: "立命館大学 グローバル・イノベーション研究機構 研究員（〜2024年8月）" }
+    - { year: "2024", text: "神戸大学大学院 人文学研究科 特命助教（〜2025年3月）" }
+    - { year: "2025", text: "立命館大学 総合心理学部 准教授（現職）" }
+  en:
+    - { year: "2015", text: "Completed graduate studies, Graduate School of Letters, Ritsumeikan University" }
+    - { year: "", text: "M.A. and Ph.D. in Literature, Ritsumeikan University" }
+    - { year: "2020", text: "Researcher, Ritsumeikan Global Innovation Research Organization (–Aug 2024)" }
+    - { year: "2024", text: "Specially Appointed Assistant Professor, Graduate School of Humanities, Kobe University (–Mar 2025)" }
+    - { year: "2025", text: "Associate Professor, College of Comprehensive Psychology, Ritsumeikan University (present)" }

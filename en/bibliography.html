@@ -1,0 +1,35 @@
+---
+layout: page
+lang: en
+ref: bibliography
+title: "Examples"
+subtitle: "Studies using each software"
+permalink: /en/bibliography/
+---
+{% assign t = site.data.i18n.en %}
+
+<p>{{ t.ui.bib_intro }}</p>
+
+{% if site.bibliography_form_url != "" %}
+<p><a class="btn" href="{{ site.bibliography_form_url }}" target="_blank" rel="noopener">{{ t.ui.submit_example }}</a></p>
+{% endif %}
+
+<div class="bib-controls">
+  <label>{{ t.ui.filter_by_software }}
+    <select id="bib-filter-software"><option value="">{{ t.ui.all }}</option></select>
+  </label>
+  <label>{{ t.ui.filter_by_year }}
+    <select id="bib-filter-year"><option value="">{{ t.ui.all }}</option></select>
+  </label>
+  <label>{{ t.ui.search_author }}
+    <input type="text" id="bib-filter-author" placeholder="{{ t.ui.search_author }}">
+  </label>
+</div>
+
+<div id="bib-app"
+     data-csv="{{ site.bibliography_csv_url }}"
+     data-i18n='{"loading":"{{ t.ui.loading }}","no_results":"{{ t.ui.no_results }}"}'>
+  <div id="bib-list"></div>
+</div>
+
+<script src="{{ '/assets/js/bibliography.js' | relative_url }}"></script>

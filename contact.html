@@ -1,0 +1,23 @@
+---
+layout: page
+lang: ja
+ref: contact
+title: "連絡先"
+permalink: /contact/
+---
+{% assign c = site.contact %}
+{% assign L = site.links %}
+
+<ul class="contact-list">
+  <li><strong>所属</strong>：立命館大学 総合心理学部 ／ 人間科学研究科</li>
+  <li><strong>Email（大学）</strong>：<a href="mailto:{{ c.email_office }}">{{ c.email_office }}</a></li>
+  <li><strong>Email（個人）</strong>：<a href="mailto:{{ c.email_personal }}">{{ c.email_personal }}</a></li>
+</ul>
+
+<h2>関連リンク</h2>
+<ul class="contact-list">
+  {% if L.researchmap != "" %}<li><a href="{{ L.researchmap }}" target="_blank" rel="noopener">researchmap</a></li>{% endif %}
+  {% if L.ritsumei_psy != "" %}<li><a href="{{ L.ritsumei_psy }}" target="_blank" rel="noopener">立命館大学 総合心理学部 教員紹介</a></li>{% endif %}
+  {% if L.ritsumei_gshs != "" %}<li><a href="{{ L.ritsumei_gshs }}" target="_blank" rel="noopener">立命館大学 人間科学研究科 教員紹介</a></li>{% endif %}
+  {% if L.github != "" %}<li><a href="{{ L.github }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
+</ul>

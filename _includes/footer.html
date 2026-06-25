@@ -1,0 +1,20 @@
+{% assign t = site.data.i18n[page.lang] %}
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      {% assign L = site.links %}
+      {% if L.researchmap != "" %}<a href="{{ L.researchmap }}" target="_blank" rel="noopener">researchmap</a>{% endif %}
+      {% if L.google_scholar != "" %}<a href="{{ L.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+      {% if L.researchgate != "" %}<a href="{{ L.researchgate }}" target="_blank" rel="noopener">ResearchGate</a>{% endif %}
+      {% if L.orcid != "" %}<a href="{{ L.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
+      {% if L.github != "" %}<a href="{{ L.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if L.twitter != "" %}<a href="{{ L.twitter }}" target="_blank" rel="noopener">X / Twitter</a>{% endif %}
+      {% if L.ritsumei_psy != "" %}<a href="{{ L.ritsumei_psy }}" target="_blank" rel="noopener">{% if page.lang == 'en' %}Ritsumeikan{% else %}立命館大学{% endif %}</a>{% endif %}
+    </div>
+    <p class="footer-meta">
+      &copy; {{ site.author }} — {{ t.footer.affiliation }}
+    </p>
+  </div>
+</footer>
+
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>

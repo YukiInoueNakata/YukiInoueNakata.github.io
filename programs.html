@@ -1,0 +1,27 @@
+---
+layout: page
+lang: ja
+ref: programs
+title: "プログラム / ソフトウェア"
+permalink: /programs/
+---
+{% assign t = site.data.i18n.ja %}
+
+<p>作成・公開しているプログラムの一覧です。各ソフトを使った研究事例は「{{ t.ui.view_examples }}」からご覧いただけます。</p>
+
+<div class="card-grid">
+{% for prog in site.data.programs %}
+  <div class="card">
+    <h3>{{ prog.name.ja }}{% if prog.wip %} <span class="tag wip-tag">{{ t.ui.in_development }}</span>{% endif %}</h3>
+    {% if prog.tags and prog.tags.size > 0 %}<div class="tags">{% for tag in prog.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
+    <p>{{ prog.summary.ja }}</p>
+    <div class="card-actions">
+      {% if prog.detail %}<a href="{{ '/programs/' | append: prog.id | append: '/' | relative_url }}">{{ t.ui.read_more }}</a>{% endif %}
+      {% if prog.app_url != "" %}<a href="{{ prog.app_url }}" target="_blank" rel="noopener">{{ t.ui.open_app }}</a>{% endif %}
+      {% if prog.download_url != "" %}<a href="{{ prog.download_url }}" target="_blank" rel="noopener">{{ t.ui.download }}</a>{% endif %}
+      {% if prog.repo_url != "" %}<a href="{{ prog.repo_url }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% unless prog.wip %}<a href="{{ '/bibliography/' | relative_url }}?software={{ prog.id }}">{{ t.ui.view_examples }}</a>{% endunless %}
+    </div>
+  </div>
+{% endfor %}
+</div>

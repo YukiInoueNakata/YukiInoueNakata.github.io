@@ -1,0 +1,14 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
+.bundle/
+*.log
+.DS_Store
+Thumbs.db
+.playwright-mcp/
+scratch_*.txt
+
+.claude/

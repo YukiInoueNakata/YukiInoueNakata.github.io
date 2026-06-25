@@ -1,0 +1,115 @@
+# ============================================================
+#  業績。出典: 履歴・業績書（2024 立命館公募）+ researchmap + CrossRef。
+#  新しい順。英語タイトル(title.en)で和文論文のものは暫定訳。
+#  type: journal | book | chapter | proceedings | presentation
+# ============================================================
+
+- year: "2026"
+  type: "journal"
+  authors: "Li, X., Kikuchi, A., Ohata, H., Nakata, Y. I., & Niikawa, T."
+  title:
+    ja: "認知症ケアにおける関係性のダイナミクス：オーストラリアと日本の家族の経験に関する質的研究"
+    en: "Relational dynamics in dementia care: a qualitative study of Australian and Japanese family experiences"
+  venue: "BMC Palliative Care, 25(1), 126."
+  doi: "10.1186/s12904-026-02085-1"
+  url: ""
+
+- year: "2025"
+  type: "journal"
+  authors: "中田友貴・福山未智・安田裕子・サトウタツヤ"
+  title:
+    ja: "TEAにおける分岐点分析の提案と描き方――記号論的文化心理学に基づく質的研究法の新展開"
+    en: "Proposing bifurcation-point analysis in TEA: A new development of qualitative methods based on semiotic cultural psychology"
+  venue: "質的研究と社会実装（立命館大学ものづくり質的研究センター）, 2(1), 72–84."
+  doi: ""
+  url: ""
+
+- year: "2024"
+  type: "chapter"
+  authors: "中田友貴（分担執筆）"
+  title:
+    ja: "「ビネー」『人物で読む心理学事典』"
+    en: "\"Binet,\" in Encyclopedia of Psychology through Key Figures"
+  venue: "朝倉書店"
+  doi: ""
+  url: ""
+
+- year: "2023"
+  type: "chapter"
+  authors: "木戸彩恵・サトウタツヤ（編）／中田友貴（分担執筆）"
+  title:
+    ja: "『文化心理学〔改訂版〕理論・各論・方法論』（分担執筆）"
+    en: "Cultural Psychology (Revised ed.): Theory, Topics, and Methods (contributed chapter)"
+  venue: "ちとせプレス"
+  doi: ""
+  url: ""
+
+- year: "2023"
+  type: "journal"
+  authors: "Gardiner, G., Lee, D. I., Baranski, E., Funder, D. C., & Members of the International Situations Project"
+  title:
+    ja: "国家の経済的豊かさは日常のポジティブな状況経験と関連する"
+    en: "The economic well-being of nations is associated with positive daily situational experiences"
+  venue: "Current Research in Ecological and Social Psychology, 4, 100088."
+  doi: ""
+  url: ""
+
+- year: "2023"
+  type: "journal"
+  authors: "Baranski, E., Sweeny, K., Gardiner, G., Members of the International Situations Project, & Funder, D. C."
+  title:
+    ja: "世界で誰が自分のパーソナリティ特性を変えようとしているのか：56カ国の大学生における意志的パーソナリティ変容"
+    en: "Who in the world is trying to change their personality traits? Volitional personality change among college students in 56 countries"
+  venue: "Journal of Personality and Social Psychology, 121(5), 1140–1156."
+  doi: ""
+  url: ""
+
+- year: "2022"
+  type: "journal"
+  authors: "向井智哉・中田友貴"
+  title:
+    ja: "法と心理学研究の動向：2009年から2021年までの内容分析"
+    en: "Trends in law and psychology research: A content analysis from 2009 to 2021"
+  venue: "法と心理, 22(1), 88–93."
+  doi: ""
+  url: ""
+
+- year: "2022"
+  type: "book"
+  authors: "中田友貴"
+  title:
+    ja: "刑事司法制度改革についての法心理学的研究：裁判員制度、取調べ可視化制度、司法取引制度を中心に"
+    en: "A legal-psychological study of criminal justice system reform"
+  venue: "ナカニシヤ出版"
+  doi: ""
+  url: ""
+
+- year: "2018"
+  type: "journal"
+  authors: "中田友貴・若林宏輔・サトウタツヤ"
+  title:
+    ja: "取調べ録画動画の提示方法が自白の任意性判断に及ぼす影響：日本独自の二画面同時提示方式と撮影焦点の観点から"
+    en: "Effects of the presentation method of recorded interrogation videos on judgments of confession voluntariness"
+  venue: "法と心理, 18(1), 17–25."
+  doi: ""
+  url: ""
+
+- year: "2016"
+  type: "journal"
+  authors: "小坂祐貴・山崎優子・石崎千景・中田友貴・若林宏輔"
+  title:
+    ja: "裁判員裁判における評議パターンの提案：質的・量的分析の統合から"
+    en: "Proposing deliberation patterns in lay-judge trials: Integrating qualitative and quantitative analyses"
+  venue: "立命館人間科学研究, 34(1), 49–67."
+  doi: ""
+  url: ""
+
+- year: "2014"
+  type: "journal"
+  authors: "中田友貴・サトウタツヤ"
+  title:
+    ja: "被告人の国籍が裁判員の量刑判断に与える影響：事件の種類の観点から"
+    en: "The influence of a defendant's nationality on lay judges' sentencing decisions"
+  venue: "立命館人間科学研究, 30(1), 45–63."
+  doi: ""
+  url: ""

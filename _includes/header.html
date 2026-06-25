@@ -1,0 +1,29 @@
+{% assign t = site.data.i18n[page.lang] %}
+{% if page.lang == "en" %}{% assign home = "/en/" %}{% assign base = "/en" %}{% else %}{% assign home = "/" %}{% assign base = "" %}{% endif %}
+
+{%- comment -%} 言語切替リンク: 同じ ref を持つ別言語ページを探す {%- endcomment -%}
+{% assign other = site.pages | where: "ref", page.ref | where_exp: "p", "p.lang != page.lang" | first %}
+{% if other %}{% assign switch_url = other.url %}{% elsif page.lang == "en" %}{% assign switch_url = "/" %}{% else %}{% assign switch_url = "/en/" %}{% endif %}
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ home | relative_url }}">
+      <span class="brand-name">{{ site.data.profile.name[page.lang] }}</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav">
+      <a href="{{ home | relative_url }}"{% if page.ref == 'home' %} class="active"{% endif %}>{{ t.nav.home }}</a>
+      <a href="{{ base | append: '/profile/' | relative_url }}"{% if page.ref == 'profile' %} class="active"{% endif %}>{{ t.nav.profile }}</a>
+      <a href="{{ base | append: '/research/' | relative_url }}"{% if page.ref == 'research' %} class="active"{% endif %}>{{ t.nav.research }}</a>
+      <a href="{{ base | append: '/publications/' | relative_url }}"{% if page.ref == 'publications' %} class="active"{% endif %}>{{ t.nav.publications }}</a>
+      <a href="{{ base | append: '/programs/' | relative_url }}"{% if page.ref == 'programs' %} class="active"{% endif %}>{{ t.nav.programs }}</a>
+      <a href="{{ base | append: '/bibliography/' | relative_url }}"{% if page.ref == 'bibliography' %} class="active"{% endif %}>{{ t.nav.bibliography }}</a>
+      <a href="{{ base | append: '/contact/' | relative_url }}"{% if page.ref == 'contact' %} class="active"{% endif %}>{{ t.nav.contact }}</a>
+      <a class="lang-switch" href="{{ switch_url | relative_url }}">{{ t.lang_switch }}</a>
+    </nav>
+  </div>
+</header>

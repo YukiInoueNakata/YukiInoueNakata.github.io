@@ -1,0 +1,63 @@
+# ============================================================
+#  経歴データ（日英）。出典: 履歴・業績書（2024 立命館公募）+ researchmap
+#  各項目: pja/pen = 期間(日/英), ja/en = 内容(日/英)
+# ============================================================
+
+# 経歴（新しい順）
+career:
+  - { pja: "2025年4月〜現在", pen: "Apr 2025–present", ja: "立命館大学 総合心理学部 准教授（任期付）", en: "Associate Professor (fixed-term), College of Comprehensive Psychology, Ritsumeikan University" }
+  - { pja: "2024年9月〜現在", pen: "Sep 2024–present", ja: "神戸大学 人文学研究科 特命助教", en: "Specially Appointed Assistant Professor, Graduate School of Humanities, Kobe University" }
+  - { pja: "2020年4月〜2024年8月", pen: "Apr 2020–Aug 2024", ja: "立命館大学 グローバル・イノベーション研究機構（R-GIRO） 専門研究員", en: "Senior Researcher, Ritsumeikan Global Innovation Research Organization (R-GIRO)" }
+  - { pja: "2020年4月〜2022年3月", pen: "Apr 2020–Mar 2022", ja: "立命館大学 OIC総合研究機構 専門研究員", en: "Senior Researcher, OIC Research Organization, Ritsumeikan University" }
+  - { pja: "2018年4月〜2020年3月", pen: "Apr 2018–Mar 2020", ja: "立命館大学 グローバル・イノベーション研究機構（R-GIRO） リサーチアシスタント", en: "Research Assistant, Ritsumeikan Global Innovation Research Organization (R-GIRO)" }
+  - { pja: "2016年4月〜2018年3月", pen: "Apr 2016–Mar 2018", ja: "日本学術振興会 特別研究員（DC2）", en: "JSPS Research Fellow (DC2), Japan Society for the Promotion of Science" }
+
+# 学歴（新しい順）
+education:
+  - { pja: "2015年4月〜2020年3月", pen: "Apr 2015–Mar 2020", ja: "立命館大学大学院 文学研究科 人文学専攻 博士課程後期課程 修了", en: "Completed the Doctoral Program (Humanities), Graduate School of Letters, Ritsumeikan University" }
+  - { pja: "2013年4月〜2015年3月", pen: "Apr 2013–Mar 2015", ja: "立命館大学大学院 文学研究科 人文学専攻 博士課程前期課程 修了", en: "Completed the Master's Program (Humanities), Graduate School of Letters, Ritsumeikan University" }
+  - { pja: "2009年4月〜2013年3月", pen: "Apr 2009–Mar 2013", ja: "立命館大学 文学部 人文学科（心理学専修） 卒業", en: "B.A., Department of Humanities (Psychology), College of Letters, Ritsumeikan University" }
+  - { pja: "", pen: "", ja: "博士（文学）（立命館大学, 2020年3月）", en: "Ph.D. in Literature, Ritsumeikan University (Mar 2020)" }
+
+# 教育歴（機関・期間・担当科目）新しい順。出典: 履歴・業績書「教育業績」
+teaching:
+  - { pja: "2025年4月〜現在", pen: "Apr 2025–present", inst_ja: "立命館大学大学院 人間科学研究科", inst_en: "Graduate School of Human Science, Ritsumeikan University", subj_ja: "演習Ⅰ〜Ⅳ、対人援助学実習", subj_en: "Graduate Seminars; Practicum in Human Services" }
+  - { pja: "2024年9月〜現在", pen: "Sep 2024–present", inst_ja: "追手門学院大学 法学部", inst_en: "Faculty of Law, Otemon Gakuin University", subj_ja: "法と心理学", subj_en: "Law and Psychology" }
+  - { pja: "2023・2024年度（秋セメスター）", pen: "AY2023 & 2024 (Fall)", inst_ja: "立命館大学大学院 法務研究科（法科大学院）", inst_en: "Graduate School of Law (Law School), Ritsumeikan University", subj_ja: "法と心理", subj_en: "Law and Psychology" }
+  - { pja: "2020年4月〜現在", pen: "Apr 2020–present", inst_ja: "立命館大学 総合心理学部", inst_en: "College of Comprehensive Psychology, Ritsumeikan University", subj_ja: "心理学史（2020〜）、司法・犯罪心理学（2020）、教養ゼミナール（2021・2022・2024）、社会の中の心理学・専門演習・海外フィールドスタディ・総合心理学特殊講義・卒業研究（2025〜）、基礎演習・国内フィールドスタディ（2026〜）", subj_en: "History of Psychology (2020–); Forensic & Criminal Psychology (2020); Liberal-Arts Seminar (2021, 2022, 2024); Psychology in Society, Advanced Seminars, Overseas Field Study, Special Lectures, Graduation Research (2025–); Basic Seminar & Domestic Field Study (2026–)" }
+  - { pja: "2020年4月〜現在", pen: "Apr 2020–present", inst_ja: "東亜大学 人間科学部 心理臨床・子ども学科", inst_en: "Dept. of Clinical Psychology and Child Studies, Faculty of Human Sciences, University of East Asia", subj_ja: "司法・犯罪心理学（集中講義）", subj_en: "Forensic & Criminal Psychology (intensive course)" }
+  - { pja: "2019年4月〜2024年3月", pen: "Apr 2019–Mar 2024", inst_ja: "大阪国際福祉専門学校 心理・医療事務科", inst_en: "Osaka International College of Social Welfare", subj_ja: "犯罪心理学", subj_en: "Criminal Psychology" }
+  - { pja: "2018年9月〜2020年3月", pen: "Sep 2018–Mar 2020", inst_ja: "神戸松蔭女子学院大学 人間科学部 心理学科", inst_en: "Dept. of Psychology, Faculty of Human Sciences, Kobe Shoin Women's University", subj_ja: "心理学調査法（2018）、心理学実験（2019）", subj_en: "Research Methods in Psychology (2018); Psychology Experiments (2019)" }
+  - { pja: "2018年4月〜2024年9月", pen: "Apr 2018–Sep 2024", inst_ja: "大阪薬科大学（現 大阪医科薬科大学）", inst_en: "Osaka University of Pharmaceutical Sciences (now Osaka Medical and Pharmaceutical University)", subj_ja: "基礎心理学", subj_en: "Basic Psychology" }
+  - { pja: "2017年9月〜2024年3月", pen: "Sep 2017–Mar 2024", inst_ja: "京都女子大学 現代社会学部", inst_en: "Faculty of Contemporary Society, Kyoto Women's University", subj_ja: "社会心理学", subj_en: "Social Psychology" }
+
+# 受賞歴（新しい順）
+awards:
+  - { pja: "2022年10月", pen: "Oct 2022", ja: "第22回 法と心理学会大会 発表賞（杉本菜月・中田友貴・サトウタツヤ「裁判員裁判の評議における、意見変容プロセスの分析」）", en: "Presentation Award, 22nd Annual Conference of the Japanese Society for Law and Psychology (Sugimoto, N., Nakata, Y. I., & Sato, T.)" }
+  - { pja: "2017年7月", pen: "Jul 2017", ja: "京都府少年補導連絡協議会 感謝状", en: "Letter of Appreciation, Kyoto Prefecture Juvenile Guidance Liaison Council" }
+  - { pja: "2016年6月", pen: "Jun 2016", ja: "日本学生支援機構 奨学金（大学院） 特に優れた業績による返還免除", en: "Scholarship Repayment Exemption for Outstanding Achievement, JASSO" }
+  - { pja: "2016年3月", pen: "Mar 2016", ja: "京都府警察本部 生活安全部長 感謝状", en: "Letter of Appreciation, Director of Community Safety, Kyoto Prefectural Police" }
+
+# 委員歴（新しい順）出典: 履歴・業績書
+committees:
+  - { pja: "2024年10月〜現在", pen: "Oct 2024–present", ja: "法と心理学会 広報委員会 委員", en: "Member, Public Relations Committee, Japanese Society for Law and Psychology" }
+  - { pja: "2023年4月〜2024年3月", pen: "Apr 2023–Mar 2024", ja: "日本質的心理学会 第20回大会 準備委員会 事務局次長", en: "Deputy Secretary-General, Organizing Committee, 20th Conference of the Japanese Association of Qualitative Psychology" }
+  - { pja: "2023年4月〜2023年6月", pen: "Apr–Jun 2023", ja: "TEAと質的探究学会 第2回大会 準備委員会 大会実行委員", en: "Organizing Committee Member, 2nd Conference of the Society for TEA and Qualitative Inquiry" }
+  - { pja: "2023年2月〜2023年3月", pen: "Feb–Mar 2023", ja: "日本発達心理学会 第34回大会 準備委員会", en: "Organizing Committee, 34th Conference of the Japanese Society of Developmental Psychology" }
+  - { pja: "2023年1月", pen: "Jan 2023", ja: "The 5th Transnational Meeting on TEA, Committee Member", en: "Committee Member, The 5th Transnational Meeting on TEA" }
+
+# 所属学協会
+societies:
+  - { pja: "", pen: "", ja: "日本心理学会", en: "Japanese Psychological Association" }
+  - { pja: "", pen: "", ja: "日本質的心理学会", en: "Japanese Association of Qualitative Psychology" }
+  - { pja: "", pen: "", ja: "日本犯罪心理学会", en: "Japanese Association of Criminal Psychology" }
+  - { pja: "", pen: "", ja: "法と心理学会", en: "Japanese Society for Law and Psychology" }
+  - { pja: "", pen: "", ja: "日本パーソナリティ心理学会", en: "Japan Society of Personality Psychology" }
+  - { pja: "", pen: "", ja: "日本保健福祉学会", en: "Japanese Society of Health and Welfare" }
+  - { pja: "", pen: "", ja: "TEAと質的探究学会", en: "Society for TEA and Qualitative Inquiry" }
+  - { pja: "", pen: "", ja: "計算社会科学会", en: "Japanese Society for Computational Social Science" }
+
+# 競争的資金（科研費等）新しい順
+grants:
+  - { pja: "2022年4月", pen: "Apr 2022", ja: "公益財団法人 日工組社会安全研究財団 若手研究助成「司法面接を用いた被害者聴取が裁判員の判断に及ぼす影響」", en: "SECOM Science and Technology / JCPF Young Researcher Grant, \"Effects of victim interviewing using investigative interview techniques on lay judges' decisions\"" }
+  - { pja: "2016年4月〜2018年3月", pen: "Apr 2016–Mar 2018", ja: "日本学術振興会 科学研究費助成事業 特別研究員奨励費「取調べにおける新たな制度に関する実証的検討」（課題番号 16J08508）", en: "JSPS KAKENHI Grant-in-Aid for JSPS Fellows, \"Empirical examination of new systems in interrogation\" (No. 16J08508)" }

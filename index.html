@@ -1,0 +1,59 @@
+---
+layout: default
+lang: ja
+ref: home
+title: null
+---
+{% assign t = site.data.i18n.ja %}
+{% assign p = site.data.profile %}
+
+<section class="hero">
+  <div class="container hero-inner">
+    <img class="hero-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name.ja }}">
+    <div class="hero-text">
+      <h1>{{ p.name.ja }}</h1>
+      <p class="hero-role">{{ p.title.ja }}</p>
+      <div class="hero-fields">
+        {% for f in p.fields.ja %}<span class="tag">{{ f }}</span>{% endfor %}
+      </div>
+      <p class="hero-bio">{{ p.bio_short.ja }}</p>
+      <div class="btn-row">
+        <a class="btn" href="{{ '/research/' | relative_url }}">{{ t.sections.research }}</a>
+        <a class="btn ghost" href="{{ '/programs/' | relative_url }}">{{ t.sections.programs }}</a>
+        {% if site.links.researchmap != "" %}<a class="btn ghost" href="{{ site.links.researchmap }}" target="_blank" rel="noopener">researchmap</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="section-title"><h2>{{ t.sections.about }}</h2><span class="en-label">About</span></div>
+    <table class="cv-table"><tbody>
+      {% for it in site.data.cv.career limit: 3 %}
+        <tr><td class="cv-period">{{ it.pja }}</td><td>{{ it.ja }}</td></tr>
+      {% endfor %}
+    </tbody></table>
+    <div class="btn-row"><a class="btn ghost" href="{{ '/profile/' | relative_url }}">{{ t.nav.profile }}</a></div>
+  </div>
+</section>
+
+<section class="block" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-title"><h2>{{ t.sections.programs }}</h2><span class="en-label">Programs</span></div>
+    <div class="card-grid">
+      {% for prog in site.data.programs limit: 3 %}
+      <div class="card">
+        <h3>{{ prog.name.ja }}{% if prog.wip %} <span class="tag wip-tag">{{ t.ui.in_development }}</span>{% endif %}</h3>
+        <p>{{ prog.summary.ja }}</p>
+        <div class="card-actions">
+          {% if prog.app_url != "" %}<a href="{{ prog.app_url }}" target="_blank" rel="noopener">{{ t.ui.open_app }}</a>{% endif %}
+          {% if prog.repo_url != "" %}<a href="{{ prog.repo_url }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+          {% unless prog.wip %}<a href="{{ '/bibliography/' | relative_url }}?software={{ prog.id }}">{{ t.ui.view_examples }}</a>{% endunless %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="btn-row"><a class="btn ghost" href="{{ '/programs/' | relative_url }}">{{ t.ui.read_more }}</a></div>
+  </div>
+</section>

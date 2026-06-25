@@ -1,0 +1,33 @@
+---
+layout: page
+lang: ja
+ref: publications
+title: "業績"
+permalink: /publications/
+---
+{% assign t = site.data.i18n.ja %}
+
+{% if site.links.researchmap != "" %}
+<p><a class="btn ghost" href="{{ site.links.researchmap }}" target="_blank" rel="noopener">{{ t.ui.all_pubs_researchmap }}</a></p>
+{% endif %}
+
+<p style="color:var(--muted);font-size:.9rem">
+  ここには主要業績を掲載しています。全業績は researchmap をご覧ください。<br>
+  （researchmap から定期的にエクスポートして <code>_data/publications.yml</code> を更新します）
+</p>
+
+<ul class="pub-list">
+{% for pub in site.data.publications %}
+  <li>
+    <span class="pub-year">{{ pub.year }}</span>
+    <p class="pub-meta">
+      {{ pub.authors }}
+      <span class="pub-title">{{ pub.title.ja }}</span>
+      {% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}
+      <span class="pub-type">{{ pub.type }}</span>
+      {% if pub.doi != "" %} <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">doi</a>{% endif %}
+      {% if pub.url != "" %} <a href="{{ pub.url }}" target="_blank" rel="noopener">link</a>{% endif %}
+    </p>
+  </li>
+{% endfor %}
+</ul>

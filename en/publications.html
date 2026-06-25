@@ -1,0 +1,30 @@
+---
+layout: page
+lang: en
+ref: publications
+title: "Publications"
+permalink: /en/publications/
+---
+{% assign t = site.data.i18n.en %}
+
+{% if site.links.researchmap != "" %}
+<p><a class="btn ghost" href="{{ site.links.researchmap }}" target="_blank" rel="noopener">{{ t.ui.all_pubs_researchmap }}</a></p>
+{% endif %}
+
+<p style="color:var(--muted);font-size:.9rem">Selected publications below. See researchmap for the full list.</p>
+
+<ul class="pub-list">
+{% for pub in site.data.publications %}
+  <li>
+    <span class="pub-year">{{ pub.year }}</span>
+    <p class="pub-meta">
+      {{ pub.authors }}
+      <span class="pub-title">{{ pub.title.en }}</span>
+      {% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}
+      <span class="pub-type">{{ pub.type }}</span>
+      {% if pub.doi != "" %} <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">doi</a>{% endif %}
+      {% if pub.url != "" %} <a href="{{ pub.url }}" target="_blank" rel="noopener">link</a>{% endif %}
+    </p>
+  </li>
+{% endfor %}
+</ul>
