@@ -28,6 +28,7 @@ permalink: /en/bibliography/
 
 <div id="bib-app"
      data-csv="{{ site.bibliography_csv_url }}"
+     data-programs='[{% for p in site.data.programs %}{"id":"{{ p.id }}","name":"{{ p.name.en }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]'
      data-i18n='{"loading":"{{ t.ui.loading }}","no_results":"{{ t.ui.no_results }}"}'>
   <div id="bib-list"></div>
 </div>
