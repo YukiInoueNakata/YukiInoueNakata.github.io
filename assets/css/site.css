@@ -170,6 +170,7 @@ section.block:last-child { border-bottom: 0; }
 .bib-year-group h3 { border-bottom: 2px solid var(--navy); display: inline-block; padding-bottom: 2px; }
 .bib-item { padding: 10px 0; border-bottom: 1px dotted var(--line); font-size: .95rem; }
 .bib-item .bib-soft { font-size: .72rem; background: #eaf2f3; color: var(--accent); border-radius: 4px; padding: 1px 7px; margin-left: 6px; }
+.bib-item .bib-type { font-size: .72rem; background: #eef0f6; color: var(--navy); border-radius: 4px; padding: 1px 7px; margin-left: 6px; }
 .bib-status { color: var(--muted); font-style: italic; }
 
 /* ---------- Footer ---------- */

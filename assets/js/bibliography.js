@@ -27,6 +27,7 @@
   PROGRAMS.forEach(function (p) { idToName[p.id] = p.name; nameToId[p.name] = p.id; });
 
   var elList = document.getElementById('bib-list');
+  var elType = document.getElementById('bib-filter-type');
   var elSoft = document.getElementById('bib-filter-software');
   var elYear = document.getElementById('bib-filter-year');
   var elAuthor = document.getElementById('bib-filter-author');
@@ -34,6 +35,7 @@
   // ヘッダは部分一致でマッピング（日英併記「ソフトウェア / Software」等にも対応）。
   // すべて小文字化済みのヘッダに対して照合する。
   var ALIASES = {
+    type: ['type', '種別', '区分'],
     software: ['software', 'ソフトウェア', 'ソフト'],
     year: ['year', '出版年', '発行年', '年度'],
     authors: ['author', '著者'],
@@ -75,11 +77,13 @@
   }
 
   function buildFilters() {
+    var types = unique(rows.map(function (r) { return r.type; })).filter(Boolean);
     var softs = unique(rows.map(function (r) { return r.software; })).filter(Boolean);
     var years = unique(rows.map(function (r) { return r.year; })).filter(Boolean).sort().reverse();
+    if (elType) { types.forEach(function (s) { elType.appendChild(opt(s, s)); }); }
     softs.forEach(function (s) { elSoft.appendChild(opt(s, s)); });
     years.forEach(function (y) { elYear.appendChild(opt(y, y)); });
-    [elSoft, elYear].forEach(function (el) { el.addEventListener('change', render); });
+    [elType, elSoft, elYear].forEach(function (el) { if (el) el.addEventListener('change', render); });
     elAuthor.addEventListener('input', render);
 
     // ?software=xxx で初期絞り込み（id でも表示名でも可）
@@ -91,8 +95,10 @@
   }
 
   function render() {
+    var ft = elType ? elType.value : '';
     var fs = elSoft.value, fy = elYear.value, fa = elAuthor.value.trim().toLowerCase();
     var items = rows.filter(function (r) {
+      if (ft && r.type !== ft) return false;
       if (fs && r.software !== fs) return false;
       if (fy && r.year !== fy) return false;
       if (fa && (r.authors || '').toLowerCase().indexOf(fa) === -1) return false;
@@ -125,6 +131,7 @@
     if (r.url) title = '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + title + '</a>';
     s += title;
     if (r.venue) s += ' <span class="bib-venue">' + esc(r.venue) + '</span>';
+    if (r.type) s += '<span class="bib-type">' + esc(r.type) + '</span>';
     if (r.software) s += '<span class="bib-soft">' + esc(r.software) + '</span>';
     return s;
   }
