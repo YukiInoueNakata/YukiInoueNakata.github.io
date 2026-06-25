@@ -31,13 +31,15 @@
   var elYear = document.getElementById('bib-filter-year');
   var elAuthor = document.getElementById('bib-filter-author');
 
+  // ヘッダは部分一致でマッピング（日英併記「ソフトウェア / Software」等にも対応）。
+  // すべて小文字化済みのヘッダに対して照合する。
   var ALIASES = {
-    software: ['software', 'ソフトウェア', 'ソフト', 'ソフト名'],
-    year: ['year', '出版年', '発行年', '年'],
-    authors: ['authors', 'author', '著者', '著者名'],
+    software: ['software', 'ソフトウェア', 'ソフト'],
+    year: ['year', '出版年', '発行年', '年度'],
+    authors: ['author', '著者'],
     title: ['title', 'タイトル', '題目', '論文名', '書名'],
-    venue: ['venue', '掲載誌・出版社', '掲載誌', '誌名', '出版社', '掲載誌名'],
-    url: ['url', 'リンク', 'ｕｒｌ'],
+    venue: ['venue', 'journal', '掲載誌', '誌名', '出版社'],
+    url: ['url', 'リンク'],
     approved: ['approved', '掲載可', '承認', '公開'],
     timestamp: ['timestamp', 'タイムスタンプ']
   };
@@ -133,7 +135,8 @@
     Object.keys(ALIASES).forEach(function (key) {
       var aliases = ALIASES[key];
       for (var h in rawObj) {
-        if (aliases.indexOf(h) !== -1) { out[key] = rawObj[h]; break; }
+        var hit = aliases.some(function (a) { return h.indexOf(a) !== -1; });
+        if (hit) { out[key] = rawObj[h]; break; }
       }
     });
     return out;
