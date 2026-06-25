@@ -11,8 +11,9 @@ permalink: /en/publications/
 <p><a class="btn ghost" href="{{ site.links.researchmap }}" target="_blank" rel="noopener">{{ t.ui.all_pubs_researchmap }}</a></p>
 {% endif %}
 
-<p style="color:var(--muted);font-size:.9rem">Selected publications below. See researchmap for the full list.</p>
+<p style="color:var(--muted);font-size:.9rem">Selected works below. See researchmap for the full list.</p>
 
+<h2>{{ t.sections.papers }}</h2>
 <ul class="pub-list">
 {% for pub in site.data.publications %}
   <li>
@@ -24,6 +25,21 @@ permalink: /en/publications/
       <span class="pub-type">{{ pub.type }}</span>
       {% if pub.doi != "" %} <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">doi</a>{% endif %}
       {% if pub.url != "" %} <a href="{{ pub.url }}" target="_blank" rel="noopener">link</a>{% endif %}
+    </p>
+  </li>
+{% endfor %}
+</ul>
+
+<h2>{{ t.sections.presentations }}</h2>
+<ul class="pub-list">
+{% for pre in site.data.presentations %}
+  <li>
+    <span class="pub-year">{{ pre.year }}</span>
+    <p class="pub-meta">
+      {{ pre.authors }}
+      <span class="pub-title">{{ pre.title.en }}</span>
+      {% if pre.venue %}<em>{{ pre.venue }}</em>{% endif %}
+      {% if pre.url != "" %} <a href="{{ pre.url }}" target="_blank" rel="noopener">link</a>{% endif %}
     </p>
   </li>
 {% endfor %}

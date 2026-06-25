@@ -22,6 +22,8 @@ ja:
     contact: "連絡先"
     links: "リンク"
     news: "お知らせ"
+    papers: "論文・著書"
+    presentations: "学会発表"
   ui:
     read_more: "詳しく見る"
     all_pubs_researchmap: "業績一覧 (researchmap)"
@@ -69,6 +71,8 @@ en:
     contact: "Contact"
     links: "Links"
     news: "News"
+    papers: "Articles & Books"
+    presentations: "Conference Presentations"
   ui:
     read_more: "Read more"
     all_pubs_researchmap: "Full list (researchmap)"

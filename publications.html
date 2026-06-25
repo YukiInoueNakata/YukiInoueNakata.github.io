@@ -12,10 +12,11 @@ permalink: /publications/
 {% endif %}
 
 <p style="color:var(--muted);font-size:.9rem">
-  ここには主要業績を掲載しています。全業績は researchmap をご覧ください。<br>
-  （researchmap から定期的にエクスポートして <code>_data/publications.yml</code> を更新します）
+  主要業績を掲載しています。全業績は researchmap をご覧ください。<br>
+  （researchmap から定期的にエクスポートして <code>_data/publications.yml</code> / <code>_data/presentations.yml</code> を更新します）
 </p>
 
+<h2>{{ t.sections.papers }}</h2>
 <ul class="pub-list">
 {% for pub in site.data.publications %}
   <li>
@@ -27,6 +28,21 @@ permalink: /publications/
       <span class="pub-type">{{ pub.type }}</span>
       {% if pub.doi != "" %} <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">doi</a>{% endif %}
       {% if pub.url != "" %} <a href="{{ pub.url }}" target="_blank" rel="noopener">link</a>{% endif %}
+    </p>
+  </li>
+{% endfor %}
+</ul>
+
+<h2>{{ t.sections.presentations }}</h2>
+<ul class="pub-list">
+{% for pre in site.data.presentations %}
+  <li>
+    <span class="pub-year">{{ pre.year }}</span>
+    <p class="pub-meta">
+      {{ pre.authors }}
+      <span class="pub-title">{{ pre.title.ja }}</span>
+      {% if pre.venue %}<em>{{ pre.venue }}</em>{% endif %}
+      {% if pre.url != "" %} <a href="{{ pre.url }}" target="_blank" rel="noopener">link</a>{% endif %}
     </p>
   </li>
 {% endfor %}
