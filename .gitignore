@@ -12,3 +12,9 @@ Thumbs.db
 scratch_*.txt
 
 .claude/
+
+# プロジェクト記録（内部用・公開リポジトリには含めない。OneDrive 同期でPC間共有）
+CLAUDE.md
+HISTORY.md
+TODO.md
+docs/work-log/

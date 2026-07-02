@@ -59,3 +59,6 @@ exclude:
   - serve.ps1
   - docs
   - .playwright-mcp
+  - CLAUDE.md
+  - HISTORY.md
+  - TODO.md
