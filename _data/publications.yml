@@ -6,6 +6,16 @@
 
 - year: "2026"
   type: "journal"
+  authors: "Kuper, N., Gardiner, G., Baranski, E., Funder, D. C., Rauthmann, J. F., & Members of the International Situations Project"
+  title:
+    ja: "パーソナリティ・トライアドにおける文化差：パーソナリティ特性・状況特性・行動状態の相互作用"
+    en: "Cultural differences in the Personality Triad: The interplay of personality traits, situation characteristics, and behavioral states around the world"
+  venue: "Journal of Personality and Social Psychology, 130(5), 1002-1046."
+  doi: ""
+  url: ""
+
+- year: "2026"
+  type: "journal"
   authors: "Li, X., Kikuchi, A., Ohata, H., Nakata, Y. I., & Niikawa, T."
   title:
     ja: "認知症ケアにおける関係性のダイナミクス：オーストラリアと日本の家族の経験に関する質的研究"
@@ -21,6 +31,16 @@
     ja: "TEAにおける分岐点分析の提案と描き方――記号論的文化心理学に基づく質的研究法の新展開"
     en: "Proposing bifurcation-point analysis in TEA: A new development of qualitative methods based on semiotic cultural psychology"
   venue: "質的研究と社会実装（立命館大学ものづくり質的研究センター）, 2(1), 72–84."
+  doi: ""
+  url: ""
+
+- year: "2025"
+  type: "journal"
+  authors: "廣田貴也・若林宏輔・中田友貴・サトウタツヤ"
+  title:
+    ja: "剽窃シナリオを用いた捜査協力型司法取引の意思決定に影響を与える変数の検討"
+    en: "Variables influencing decision-making in cooperative plea bargaining: Using a plagiarism scenario"
+  venue: "立命館人間科学研究, 51, 1-12."
   doi: ""
   url: ""
 
@@ -64,6 +84,36 @@
   doi: ""
   url: ""
 
+- year: "2023"
+  type: "journal"
+  authors: "武田悠衣・中田友貴・若林宏輔・仲真紀子・サトウタツヤ"
+  title:
+    ja: "大学場面における評価者・加害者・被害者の性別がセクシュアル・ハラスメント認識に与える影響"
+    en: "Effects of the gender of evaluators, perpetrators, and victims on sexual harassment perception in university settings"
+  venue: "立命館人間科学研究, 17-30."
+  doi: ""
+  url: ""
+
+- year: "2022"
+  type: "book"
+  authors: "中田友貴"
+  title:
+    ja: "刑事司法制度改革についての法心理学的研究：裁判員制度、取調べ可視化制度、司法取引制度を中心に"
+    en: "A legal-psychological study of criminal justice system reform"
+  venue: "ナカニシヤ出版"
+  doi: ""
+  url: ""
+
+- year: "2022"
+  type: "book"
+  authors: "松本真理子・永田雅子（編）／中田友貴（分担執筆）"
+  title:
+    ja: "『公認心理師基礎用語集 改訂第3版 よくわかる国試対策キーワード』"
+    en: "Basic Glossary for Certified Public Psychologists, 3rd ed."
+  venue: "遠見書房."
+  doi: ""
+  url: ""
+
 - year: "2022"
   type: "journal"
   authors: "向井智哉・中田友貴"
@@ -75,12 +125,112 @@
   url: ""
 
 - year: "2022"
-  type: "book"
-  authors: "中田友貴"
+  type: "journal"
+  authors: "綿村英一郎・藤田政博・板山昂・赤嶺亜紀・仲真紀子・中田友貴"
   title:
-    ja: "刑事司法制度改革についての法心理学的研究：裁判員制度、取調べ可視化制度、司法取引制度を中心に"
-    en: "A legal-psychological study of criminal justice system reform"
-  venue: "ナカニシヤ出版"
+    ja: "【学会企画】司法・犯罪心理学分野における公認心理師の役割：法と心理学会（監修）新テキスト企画からみえてきた課題と展望"
+    en: "The role of certified public psychologists in forensic and criminal psychology"
+  venue: "法と心理, 22, 65-70."
+  doi: ""
+  url: ""
+
+- year: "2022"
+  type: "journal"
+  authors: "神崎真実・孫怡・妹尾麻美・肥後克己・中田友貴・鈴木華子・矢藤優子・安田裕子・岡本尚子・サトウタツヤ"
+  title:
+    ja: "産後の夫婦の家事分担と妻のQOLの関連：「いばらきコホート調査」をもとに"
+    en: "Division of household labor after childbirth and wives' quality of life: The Ibaraki Cohort Study"
+  venue: "日本保健福祉学会誌, 29, 15-23."
+  doi: ""
+  url: ""
+
+- year: "2022"
+  type: "journal"
+  authors: "孫怡・矢藤優子・妹尾麻美・神崎真実・肥後克己・川本静香・中田友貴ほか"
+  title:
+    ja: "妊娠期女性用QOL尺度の作成と信頼性・妥当性の検討"
+    en: "Development and validation of a QOL scale for pregnant women"
+  venue: "Journal of Health Psychology Research, 34, 51-57."
+  doi: ""
+  url: ""
+
+- year: "2021"
+  type: "journal"
+  authors: "神崎真実・岡本尚子・矢藤優子・妹尾麻美・孫怡・肥後克己・土元哲平・中田友貴ほか"
+  title:
+    ja: "何が調査への参加継続を支えるのか――妊婦を対象とした縦断研究「いばらきコホート調査」をもとに"
+    en: "What sustains continued participation in longitudinal research: The Ibaraki Cohort Study"
+  venue: "パーソナリティ研究, 30, 130-133."
+  doi: ""
+  url: ""
+
+- year: "2020"
+  type: "journal"
+  authors: "Gardiner, G., Lee, D., Baranski, E., Funder, D., & Members of the International Situations Project"
+  title:
+    ja: "世界の幸福：63カ国におけるエティック・エミック統合アプローチ"
+    en: "Happiness around the world: A combined etic-emic approach across 63 countries"
+  venue: "PLOS ONE, 15."
+  doi: ""
+  url: ""
+
+- year: "2020"
+  type: "journal"
+  authors: "Lee, D. I., Gardiner, G., Baranski, E., Members of the International Situations Project, & Funder, D. C."
+  title:
+    ja: "世界の状況経験：62カ国における追試と拡張"
+    en: "Situational experience around the world: A replication and extension in 62 countries"
+  venue: "Journal of Personality, 88, 1091-1110."
+  doi: ""
+  url: ""
+
+- year: "2020"
+  type: "journal"
+  authors: "妹尾麻美・孫怡・肥後克己・神崎真実・中田友貴・川本静香ほか"
+  title:
+    ja: "「いばらきコホート調査」における調査設計と概要"
+    en: "Design and overview of the Ibaraki Cohort Study"
+  venue: "日本保健福祉学会誌, 26, 5-16."
+  doi: ""
+  url: ""
+
+- year: "2020"
+  type: "journal"
+  authors: "神崎真実・川本静香・妹尾麻美・中田友貴・肥後克己・孫怡ほか"
+  title:
+    ja: "「いばらきコホート調査」における倫理的配慮"
+    en: "Ethical considerations in the Ibaraki Cohort Study"
+  venue: "日本保健福祉学会誌, 26, 17-25."
+  doi: ""
+  url: ""
+
+- year: "2019"
+  type: "chapter"
+  authors: "松本真理子・永田雅子（編）／中田友貴（分担執筆）"
+  title:
+    ja: "『公認心理師基礎用語集：よくわかる国試対策キーワード』"
+    en: "Basic Glossary for Certified Public Psychologists"
+  venue: "遠見書房, 236p."
+  doi: ""
+  url: ""
+
+- year: "2019"
+  type: "chapter"
+  authors: "木戸彩恵・サトウタツヤ（編）／中田友貴（分担執筆）"
+  title:
+    ja: "「裁きから見る文化／文化から見る裁き」『文化心理学：理論・各論・方法論』"
+    en: "Judgment through culture / culture through judgment, in Cultural Psychology"
+  venue: "ちとせプレス, 290p."
+  doi: ""
+  url: ""
+
+- year: "2018"
+  type: "chapter"
+  authors: "松本真理子・永田雅子（編）／中田友貴（分担執筆）"
+  title:
+    ja: "『公認心理師基礎用語集：よくわかる国試対策キーワード117』"
+    en: "Basic Glossary for Certified Public Psychologists 117"
+  venue: "遠見書房, 230p."
   doi: ""
   url: ""
 
@@ -104,6 +254,26 @@
   doi: ""
   url: ""
 
+- year: "2015"
+  type: "book"
+  authors: "元良勇次郎（著）／中田友貴（共訳）"
+  title:
+    ja: "『元良勇次郎著作集 第10巻 『心理学要綱』・心理学講義・東洋的自我』"
+    en: "Collected Works of Yujiro Motora, Vol. 10"
+  venue: "クレス出版."
+  doi: ""
+  url: ""
+
+- year: "2015"
+  type: "chapter"
+  authors: "元良勇次郎（著）／中田友貴（分担執筆・翻刻）"
+  title:
+    ja: "『元良勇次郎著作集 第11巻 論稿（1906〜1912）心理学・注意の心理・教育』"
+    en: "Collected Works of Yujiro Motora, Vol. 11"
+  venue: "クレス出版."
+  doi: ""
+  url: ""
+
 - year: "2014"
   type: "journal"
   authors: "中田友貴・サトウタツヤ"
@@ -111,5 +281,15 @@
     ja: "被告人の国籍が裁判員の量刑判断に与える影響：事件の種類の観点から"
     en: "The influence of a defendant's nationality on lay judges' sentencing decisions"
   venue: "立命館人間科学研究, 30(1), 45–63."
+  doi: ""
+  url: ""
+
+- year: "2013"
+  type: "chapter"
+  authors: "藤田政博（編）／中田友貴（分担執筆）"
+  title:
+    ja: "『法と心理学』"
+    en: "Law and Psychology"
+  venue: "法律文化社, 271p."
   doi: ""
   url: ""
