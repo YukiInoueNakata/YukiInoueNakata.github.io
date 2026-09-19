@@ -4,15 +4,15 @@
 #  type: journal | book | chapter | proceedings | presentation
 # ============================================================
 
-- year: "in press"
+- year: "2026"
   type: "journal"
   authors: "Inoue Nakata, Y.*, Kobayashi, Y.*, Niikawa, T., & Nishida, S. （*equal contribution）"
   title:
     ja: "錯視は運動の矛盾した知覚を引き起こす"
     en: "Illusions induce contradictory perception of motion"
-  venue: "i-Perception (Short and Sweet), in press."
-  doi: ""
-  url: ""
+  venue: "i-Perception, 17(5), 1-7."
+  doi: "10.1177/20416695261485444"
+  url: "https://doi.org/10.1177/20416695261485444"
 - year: "2026"
   type: "journal"
   authors: "Kuper, N., Gardiner, G., Baranski, E., Funder, D. C., Rauthmann, J. F., & Members of the International Situations Project"
