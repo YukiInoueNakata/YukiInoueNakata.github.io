@@ -8,14 +8,14 @@
 
 - id: "temer-plus"
   name:
-    ja: "TEMer Plus"
-    en: "TEMer Plus"
+    ja: "TEMerPlus"
+    en: "TEMerPlus"
   summary:
     ja: "複線径路等至性モデル（TEM）の図をブラウザ上で作成・編集できるダイアグラムエディタ。"
     en: "A web-based diagram editor for creating and editing Trajectory Equifinality Model (TEM) diagrams."
   tags: ["TypeScript", "TEM", "質的研究"]
-  app_url: "https://yukiinouenakata.github.io/temer-plus/"
-  repo_url: "https://github.com/YukiInoueNakata/temer-plus"
+  app_url: "https://yukiinouenakata.github.io/temerplus/"
+  repo_url: "https://github.com/YukiInoueNakata/temerplus"
   download_url: ""
   detail: false
   wip: false
