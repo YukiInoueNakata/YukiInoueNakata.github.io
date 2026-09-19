@@ -138,7 +138,8 @@ section.block:last-child { border-bottom: 0; }
 .card p { margin: 0 0 .8rem; color: var(--muted); font-size: .94rem; }
 .card .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: .8rem; }
 .card .tags .tag { font-size: .74rem; padding: 2px 9px; }
-.card-actions { display: flex; gap: 14px; font-size: .88rem; }
+.card-actions { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: .88rem; }
+.card-actions a { white-space: nowrap; }
 
 /* ---------- Publication list ---------- */
 .pub-list { list-style: none; padding: 0; margin: 0; }
