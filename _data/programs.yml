@@ -2,6 +2,7 @@
 #  作成したプログラム / ソフトウェア（日英）。
 #  id … 研究事例フォーム/CSV の software 列と一致させる識別子
 #  app_url … Web アプリ等を直接開くURL（あれば）
+#  tutorial_url … チュートリアル/講習会資料のページ（あれば。サイト内は "/tea2026/" のように書く）
 #  detail … true で _programs/<id>.md の詳細ページへリンク
 #  wip … true で「開発中」バッジ
 # ============================================================
@@ -15,6 +16,7 @@
     en: "A web-based diagram editor for creating and editing Trajectory Equifinality Model (TEM) diagrams."
   tags: ["TypeScript", "TEM", "質的研究"]
   app_url: "https://yukiinouenakata.github.io/temerplus/"
+  tutorial_url: "/tea2026/"
   repo_url: "https://github.com/YukiInoueNakata/temerplus"
   download_url: ""
   detail: false
@@ -29,6 +31,7 @@
     en: "A desktop app (Tauri 2) for affinity diagramming and qualitative data mapping."
   tags: ["TypeScript", "Tauri", "質的研究"]
   app_url: ""
+  tutorial_url: ""
   repo_url: "https://github.com/YukiInoueNakata/affinity-mapping-studio"
   download_url: ""
   detail: false
@@ -43,6 +46,7 @@
     en: "A structured layout editor for academic posters. Manage A0/A1 posters in YAML + Markdown and export to PDF/HTML/SVG/PPTX/Marp (Tauri v2 + React)."
   tags: ["TypeScript", "Tauri", "ポスター"]
   app_url: ""
+  tutorial_url: ""
   repo_url: "https://github.com/YukiInoueNakata/research_poster_studio"
   download_url: ""
   detail: false

@@ -18,6 +18,7 @@ permalink: /programs/
     <div class="card-actions">
       {% if prog.detail %}<a href="{{ '/programs/' | append: prog.id | append: '/' | relative_url }}">{{ t.ui.read_more }}</a>{% endif %}
       {% if prog.app_url != "" %}<a href="{{ prog.app_url }}" target="_blank" rel="noopener">{{ t.ui.open_app }}</a>{% endif %}
+      {% if prog.tutorial_url and prog.tutorial_url != "" %}<a href="{{ prog.tutorial_url | relative_url }}">{{ t.ui.tutorial }}</a>{% endif %}
       {% if prog.download_url != "" %}<a href="{{ prog.download_url }}" target="_blank" rel="noopener">{{ t.ui.download }}</a>{% endif %}
       {% if prog.repo_url != "" %}<a href="{{ prog.repo_url }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
       {% unless prog.wip %}<a href="{{ '/bibliography/' | relative_url }}?software={{ prog.id }}">{{ t.ui.view_examples }}</a>{% endunless %}
