@@ -18,6 +18,9 @@
   app_url: "https://yukiinouenakata.github.io/temerplus/"
   tutorial_url: "/tea2026/"
   repo_url: "https://github.com/YukiInoueNakata/temerplus"
+  # 研究事例フォーム（ツールごと）。setup スクリプト docs/bibliography_form_setup.gs で生成する
+  form_url: ""
+  csv_url: ""
   download_url: ""
   detail: false
   wip: false
@@ -33,6 +36,9 @@
   app_url: ""
   tutorial_url: ""
   repo_url: "https://github.com/YukiInoueNakata/affinity-mapping-studio"
+  # 研究事例フォーム（ツールごと）。setup スクリプト docs/bibliography_form_setup.gs で生成する
+  form_url: ""
+  csv_url: ""
   download_url: ""
   detail: false
   wip: false
@@ -48,6 +54,9 @@
   app_url: ""
   tutorial_url: ""
   repo_url: "https://github.com/YukiInoueNakata/research_poster_studio"
+  # 研究事例フォーム（ツールごと）。setup スクリプト docs/bibliography_form_setup.gs で生成する
+  form_url: ""
+  csv_url: ""
   download_url: ""
   detail: false
   wip: true

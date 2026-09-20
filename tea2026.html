@@ -72,7 +72,7 @@ permalink: /tea2026/
 <h2>3. スライド</h2>
 
 <div class="btn-row">
-  <a class="btn ghost" href="{{ '/assets/tea2026/20260920_TEMerPlus_tutorial_2h.pdf' | relative_url }}" target="_blank" rel="noopener">当日のスライド（PDF・64ページ）</a>
+  <a class="btn ghost" href="{{ '/assets/tea2026/20260920_TEMerPlus_tutorial_2h.pdf' | relative_url }}" target="_blank" rel="noopener">当日のスライド（PDF・63ページ）</a>
 </div>
 
 <h2>4. 当日の流れ</h2>
@@ -105,5 +105,15 @@ permalink: /tea2026/
   <li><strong>機能が見つからない</strong>：Ctrl + K でキーワード検索ができます。</li>
   <li><strong>動作がおかしい</strong>：ページを再読み込みしてください（保存済みなら .tem ファイルを開き直せます）。</li>
 </ul>
+
+<h2>7. 研究にお使いになったら</h2>
+
+{% assign temer = site.data.programs | where: "id", "temer-plus" | first %}
+<p>TEMerPlus を使った研究を発表されたら、書誌情報をお知らせください。<a href="{{ '/bibliography/' | relative_url }}">研究事例</a>のページに掲載し、ツールの改良の参考にもさせていただきます。</p>
+{% if temer.form_url != "" %}
+<p><a class="btn" href="{{ temer.form_url }}" target="_blank" rel="noopener">TEMerPlus の研究事例を登録する</a></p>
+{% else %}
+<p>登録フォームは準備中です。当面は<a href="{{ '/contact/' | relative_url }}">連絡先</a>からお寄せください（書誌情報・URL または DOI を添えていただけると助かります）。</p>
+{% endif %}
 
 <p><span class="small">TEMerPlus は複線径路等至性モデル（TEM）の作図に特化した無償のツールです。保存形式の .tem は仕様を公開した JSON なので、ツールが使えなくなっても内容はテキストとして読み出せます。ご質問・ご要望は <a href="{{ '/contact/' | relative_url }}">連絡先</a> からお寄せください。</span></p>

@@ -10,10 +10,14 @@ permalink: /bibliography/
 
 <p>{{ t.ui.bib_intro }}</p>
 
-{% if site.bibliography_form_url != "" %}
+{% assign forms = site.data.programs | where_exp: "p", "p.form_url != ''" %}
+{% if forms.size > 0 %}
+<p>{{ t.ui.submit_example }}（ツールごとに受け付けています）</p>
+<p>{% for p in forms %}<a class="btn" href="{{ p.form_url }}" target="_blank" rel="noopener">{{ p.name.ja }}</a> {% endfor %}</p>
+{% elsif site.bibliography_form_url != "" %}
 <p><a class="btn" href="{{ site.bibliography_form_url }}" target="_blank" rel="noopener">{{ t.ui.submit_example }}</a></p>
 {% else %}
-<p class="bib-status">（投稿フォームの URL を <code>_config.yml</code> の <code>bibliography_form_url</code> に設定すると、ここに投稿ボタンが表示されます）</p>
+<p>研究事例の投稿フォームは準備中です。お使いいただいた研究がありましたら、<a href="{{ '/contact/' | relative_url }}">連絡先</a>からお知らせください。</p>
 {% endif %}
 
 <div class="bib-controls">
@@ -33,7 +37,7 @@ permalink: /bibliography/
 
 <div id="bib-app"
      data-csv="{{ site.bibliography_csv_url }}"
-     data-programs='[{% for p in site.data.programs %}{"id":"{{ p.id }}","name":"{{ p.name.ja }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]'
+     data-programs='[{% for p in site.data.programs %}{"id":"{{ p.id }}","name":"{{ p.name.ja }}","csv":"{{ p.csv_url }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]'
      data-i18n='{"loading":"{{ t.ui.loading }}","no_results":"{{ t.ui.no_results }}"}'>
   <div id="bib-list"></div>
 </div>

@@ -10,6 +10,8 @@
      title    : タイトル / 題目 / 論文名
      venue    : 掲載誌・出版社 / 掲載誌 / 誌名 / 出版社
      url      : URL / リンク
+     format   : 発表形式（学会発表のとき 口頭 / ポスター / その他）
+     refereed : 査読（論文のとき 査読あり / 査読なし）
      approved : 掲載可 / 承認 / approved   ← TRUE の行のみ表示
    - software の値は programs.yml の表示名（例 "TEMer Plus"）に揃える。
      プログラム一覧カードからの ?software=<id> は表示名へ自動変換して絞り込む。
@@ -42,34 +44,49 @@
     title: ['title', 'タイトル', '題目', '論文名', '書名'],
     venue: ['venue', 'journal', '掲載誌', '誌名', '出版社'],
     url: ['url', 'リンク'],
+    format: ['発表形式', 'format'],        // 学会発表のときだけ入る（口頭/ポスター/その他）
+    refereed: ['査読', 'refereed'],        // 論文のときだけ入る（査読あり/なし）
     approved: ['approved', '掲載可', '承認', '公開'],
     timestamp: ['timestamp', 'タイムスタンプ']
   };
 
   var rows = [];
 
-  if (!CSV_URL) {
+  // 取得元: ツールごとの csv（programs.yml の csv_url）＋ 旧来の全体 CSV（あれば）。
+  // ツールごとの CSV には software 列が無くてよい（そのツール名を補う）。
+  var SOURCES = [];
+  PROGRAMS.forEach(function (p) {
+    if (p.csv) SOURCES.push({ url: p.csv, software: p.name });
+  });
+  if (CSV_URL) SOURCES.push({ url: CSV_URL, software: '' });
+
+  if (!SOURCES.length) {
     elList.innerHTML = '<p class="bib-status">' +
-      (T.no_csv || '（_config.yml の bibliography_csv_url にスプレッドシートの公開CSV URL を設定してください）') +
-      '</p>';
+      (T.no_csv || '研究事例はまだ登録されていません。') + '</p>';
     return;
   }
 
   elList.innerHTML = '<p class="bib-status">' + (T.loading || 'Loading…') + '</p>';
 
-  fetch(CSV_URL)
-    .then(function (r) { return r.text(); })
-    .then(function (text) {
-      rows = parseCSV(text)
-        .map(normalize)
-        .filter(function (r) { return isApproved(r.approved); });
-      buildFilters();
-      render();
-    })
-    .catch(function () {
-      elList.innerHTML = '<p class="bib-status">' +
-        (T.load_error || 'データを読み込めませんでした。CSVの公開設定をご確認ください。') + '</p>';
-    });
+  Promise.all(SOURCES.map(function (src) {
+    return fetch(src.url)
+      .then(function (r) { return r.text(); })
+      .then(function (text) {
+        return parseCSV(text).map(normalize).map(function (row) {
+          if (!row.software && src.software) row.software = src.software;
+          return row;
+        });
+      })
+      .catch(function () { return []; });   // 1 本落ちても他は表示する
+  })).then(function (lists) {
+    rows = [].concat.apply([], lists).filter(function (r) { return isApproved(r.approved); });
+    if (!rows.length) {
+      elList.innerHTML = '<p class="bib-status">' + (T.no_results || '該当する研究事例はありません。') + '</p>';
+      return;
+    }
+    buildFilters();
+    render();
+  });
 
   function isApproved(v) {
     var a = (v == null ? '' : String(v)).trim().toLowerCase();
@@ -131,7 +148,12 @@
     if (r.url) title = '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + title + '</a>';
     s += title;
     if (r.venue) s += ' <span class="bib-venue">' + esc(r.venue) + '</span>';
-    if (r.type) s += '<span class="bib-type">' + esc(r.type) + '</span>';
+    if (r.type) {
+      var label = r.type;
+      var sub = r.format || r.refereed || '';     // 学会発表→口頭/ポスター、論文→査読あり/なし
+      if (sub) label += '（' + sub + '）';
+      s += '<span class="bib-type">' + esc(label) + '</span>';
+    }
     if (r.software) s += '<span class="bib-soft">' + esc(r.software) + '</span>';
     return s;
   }

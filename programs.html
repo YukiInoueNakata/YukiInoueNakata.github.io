@@ -22,6 +22,7 @@ permalink: /programs/
       {% if prog.download_url != "" %}<a href="{{ prog.download_url }}" target="_blank" rel="noopener">{{ t.ui.download }}</a>{% endif %}
       {% if prog.repo_url != "" %}<a href="{{ prog.repo_url }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
       {% unless prog.wip %}<a href="{{ '/bibliography/' | relative_url }}?software={{ prog.id }}">{{ t.ui.view_examples }}</a>{% endunless %}
+      {% if prog.form_url and prog.form_url != "" %}<a href="{{ prog.form_url }}" target="_blank" rel="noopener">{{ t.ui.submit_example }}</a>{% endif %}
     </div>
   </div>
 {% endfor %}
