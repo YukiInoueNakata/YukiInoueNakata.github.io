@@ -15,7 +15,9 @@ baseurl: ""
 lang_default: "ja"
 
 # --- 検索エンジン -------------------------------------------
-# Google Search Console の所有権確認（HTMLタグ方式）で表示される content="..." の中身だけを入れる
+# Google Search Console の所有権確認（HTMLタグ方式）で表示される content="..." の中身だけを入れる。
+# 【削除禁止】この値から jekyll-seo-tag が <meta name="google-site-verification"> を出している。
+# 消すと所有権の確認が外れ、Search Console のデータが見られなくなる（2026-09-24 確認済み）。
 google_site_verification: "vvfLVfVgaYwwzrGxS61NvlR1OwJy6myuPQJsPkpLyZ8"
 # IndexNow（Bing / Yandex / DuckDuckGo 等。Google は非対応）のキー。
 # 同じ値のファイル <key>.txt をサイト直下に置いてある
