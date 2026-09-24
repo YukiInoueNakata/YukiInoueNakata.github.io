@@ -14,6 +14,13 @@ baseurl: ""
 
 lang_default: "ja"
 
+# --- 検索エンジン -------------------------------------------
+# Google Search Console の所有権確認（HTMLタグ方式）で表示される content="..." の中身だけを入れる
+google_site_verification: "vvfLVfVgaYwwzrGxS61NvlR1OwJy6myuPQJsPkpLyZ8"
+# IndexNow（Bing / Yandex / DuckDuckGo 等。Google は非対応）のキー。
+# 同じ値のファイル <key>.txt をサイト直下に置いてある
+indexnow_key: "e8ed207256a74d8a734f1c2f5ae497e3"
+
 # --- 外部 ID / リンク (TODO: 実際の URL に差し替え) -------------
 links:
   researchmap: "https://researchmap.jp/y.i.nakata"

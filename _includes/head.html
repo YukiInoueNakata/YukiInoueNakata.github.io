@@ -4,9 +4,57 @@
   <meta name="theme-color" content="#1f3a5f">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   {% seo %}
+  {%- if site.google_site_verification != "" %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+  {%- endif %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  {%- comment -%}
+    言語版の相互リンク（hreflang）。同じ ref を持つ日英ページを対に見せて，
+    検索エンジンに「別言語の同一ページ」と伝える。
+  {%- endcomment -%}
+  {%- if page.ref -%}
+    {%- for alt in site.pages -%}
+      {%- if alt.ref == page.ref and alt.lang -%}
+  <link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url | absolute_url }}">
+        {%- if alt.lang == 'ja' %}
+  <link rel="alternate" hreflang="x-default" href="{{ alt.url | absolute_url }}">
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- comment -%}
+    研究者情報の構造化データ。researchmap・ORCID・学内DB・GitHub と同一人物であることを
+    明示して、名前で検索したときに拾われやすくする（トップページのみ）。
+  {%- endcomment -%}
+  {%- if page.ref == 'home' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{% if page.lang == 'en' %}Yuki Inoue Nakata{% else %}中田友貴{% endif %}",
+    "alternateName": ["中田友貴", "Yuki Inoue Nakata", "Yuki I. Nakata"],
+    "url": "{{ '/' | absolute_url }}",
+    "jobTitle": "{% if page.lang == 'en' %}Associate Professor{% else %}准教授{% endif %}",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "{% if page.lang == 'en' %}Ritsumeikan University, College of Comprehensive Psychology{% else %}立命館大学 総合心理学部{% endif %}",
+      "url": "https://www.ritsumei.ac.jp/psy/"
+    },
+    "knowsAbout": [{% if page.lang == 'en' %}"History of psychology", "Cultural psychology", "Law and psychology", "Qualitative research"{% else %}"心理学史", "文化心理学", "法と心理学", "質的研究"{% endif %}],
+    "sameAs": [
+      "{{ site.links.researchmap }}",
+      "{{ site.links.orcid }}",
+      "{{ site.links.github }}",
+      "{{ site.links.ritsumei_psy }}",
+      "{{ site.links.ritsumei_gshs }}",
+      "https://research-db.ritsumei.ac.jp/rithp/k03/resid/S001170"
+    ]
+  }
+  </script>
+  {%- endif %}
 </head>
