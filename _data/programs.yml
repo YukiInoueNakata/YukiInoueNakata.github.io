@@ -48,15 +48,17 @@
     ja: "Research Poster Studio"
     en: "Research Poster Studio"
   summary:
-    ja: "研究ポスター専用の構造化レイアウトエディタ。A0/A1 ポスターを YAML+Markdown で管理し、PDF/HTML/SVG/PPTX/Marp に出力できる（Tauri v2 + React）。"
-    en: "A structured layout editor for academic posters. Manage A0/A1 posters in YAML + Markdown and export to PDF/HTML/SVG/PPTX/Marp (Tauri v2 + React)."
+    ja: "研究ポスター専用の構造化レイアウトエディタ。A0/A1 ポスターを YAML+Markdown で管理し、PDF/PNG/HTML/SVG/PPTX/Markdown に出力できる（Tauri v2 + React）。"
+    en: "A structured layout editor for academic posters. Manage A0/A1 posters in YAML + Markdown and export to PDF/PNG/HTML/SVG/PPTX/Markdown (Tauri v2 + React)."
   tags: ["TypeScript", "Tauri", "ポスター"]
   app_url: ""
-  tutorial_url: ""
+  # はじめてのガイド（インストールから PDF まで・画像つき）。英語ページは tutorial_url_en を使う
+  tutorial_url: "https://github.com/YukiInoueNakata/research_poster_studio/blob/main/docs/getting-started.ja.md"
+  tutorial_url_en: "https://github.com/YukiInoueNakata/research_poster_studio/blob/main/docs/getting-started.en.md"
   repo_url: "https://github.com/YukiInoueNakata/research_poster_studio"
   # 研究事例フォーム（ツールごと）。setup スクリプト docs/bibliography_form_setup.gs で生成する
   form_url: ""
   csv_url: ""
-  download_url: ""
+  download_url: "https://github.com/YukiInoueNakata/research_poster_studio/releases/latest"
   detail: false
   wip: true
