@@ -1,6 +1,7 @@
 # ============================================================
 #  学会発表。出典: 履歴・業績書（2024 立命館公募）+ researchmap。新しい順。
 #  ※ 英語タイトル(title.en)で和文発表のものは暫定訳。
+#  orig: "en" = 原題が英語（日本語ページでも title.en を表示）。省略時は和文扱い。
 # ============================================================
 - year: "2026"
   authors: "井口美代花・三日月礼乃・土元哲平・Mihalits Dominik・中田友貴・サトウタツヤ"
@@ -17,6 +18,7 @@
   venue: "日本心理学会 第90回大会（東京・東洋大学）, 2026年9月."
 
 - year: "2026"
+  orig: "en"
   authors: "井口美代花・中田友貴・サトウタツヤ"
   title:
     ja: "異文化参入における主要な葛藤経験のプロセス：複線径路・等至性モデル（TEM）による分析"
@@ -45,6 +47,7 @@
   venue: "立命館大学ものづくり質的研究センター 第33回研究会（オンライン）, 2026年5月."
 
 - year: "2026"
+  orig: "en"
   authors: "中田友貴"
   title:
     ja: "市民は正しく判断できるのか？：裁判員裁判と検察審査会での心理学的課題"
@@ -52,6 +55,7 @@
   venue: "台日刑事法研究學會, 2026年1月."
 
 - year: "2025"
+  orig: "en"
   authors: "Nakata, Y. I., Tsuji, A., Takahashi, N., & Yoshida, F."
   title:
     ja: "オンラインコメントにみる犯罪類型への日本の世論：YouTubeコメントのテキストマイニング分析"
@@ -80,6 +84,7 @@
   venue: "日本質的心理学会 第21回大会（東京）, 2024年10月."
 
 - year: "2024"
+  orig: "en"
   authors: "Nakata Inoue Yuki, Ayu Kudo, Yuko Yasuda"
   title:
     ja: "ChatGPTはTEA（複線径路等至性アプローチ）に基づく分析のためのインタビューを実施できるか？"
@@ -87,6 +92,7 @@
   venue: "The 6th Transnational Meeting on TEA（大阪）, 2024年10月."
 
 - year: "2023"
+  orig: "en"
   authors: "Yuki I. Nakata, Natsuki Sugimoto, Marie M. Morita"
   title:
     ja: "ヘッドマウントディスプレイを用いた目撃証言研究の試み"
@@ -94,6 +100,7 @@
   venue: "SARMAC XIV 2023（名古屋）, 2023年8月."
 
 - year: "2016"
+  orig: "en"
   authors: "Nakata, Y., Suzuki, A., Wakabayashi, K., & Sato, T."
   title:
     ja: "1945年までの日本における法心理学研究の歴史：法領域に着目して"

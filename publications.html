@@ -23,7 +23,7 @@ permalink: /publications/
     <span class="pub-year">{{ pub.year }}</span>
     <p class="pub-meta">
       {{ pub.authors }}
-      <span class="pub-title">{{ pub.title.ja }}</span>
+      <span class="pub-title">{% if pub.orig == "en" %}{{ pub.title.en }}{% else %}{{ pub.title.ja }}{% endif %}</span>
       {% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}
       <span class="pub-type">{{ pub.type }}</span>
       {% if pub.doi != "" %} <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">doi</a>{% endif %}
@@ -40,7 +40,7 @@ permalink: /publications/
     <span class="pub-year">{{ pre.year }}</span>
     <p class="pub-meta">
       {{ pre.authors }}
-      <span class="pub-title">{{ pre.title.ja }}</span>
+      <span class="pub-title">{% if pre.orig == "en" %}{{ pre.title.en }}{% else %}{{ pre.title.ja }}{% endif %}</span>
       {% if pre.venue %}<em>{{ pre.venue }}</em>{% endif %}
       {% if pre.url != "" %} <a href="{{ pre.url }}" target="_blank" rel="noopener">link</a>{% endif %}
     </p>

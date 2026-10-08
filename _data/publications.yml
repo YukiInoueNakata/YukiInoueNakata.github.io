@@ -2,9 +2,11 @@
 #  業績。出典: 履歴・業績書（2024 立命館公募）+ researchmap + CrossRef。
 #  新しい順。英語タイトル(title.en)で和文論文のものは暫定訳。
 #  type: journal | book | chapter | proceedings | presentation
+#  orig: "en" = 原題が英語（日本語ページでも title.en を表示）。省略時は和文扱い。
 # ============================================================
 
 - year: "2026"
+  orig: "en"
   type: "journal"
   authors: "Inoue Nakata, Y.*, Kobayashi, Y.*, Niikawa, T., & Nishida, S. （*equal contribution）"
   title:
@@ -14,6 +16,7 @@
   doi: "10.1177/20416695261485444"
   url: "https://doi.org/10.1177/20416695261485444"
 - year: "2026"
+  orig: "en"
   type: "journal"
   authors: "Kuper, N., Gardiner, G., Baranski, E., Funder, D. C., Rauthmann, J. F., & Members of the International Situations Project"
   title:
@@ -24,6 +27,7 @@
   url: ""
 
 - year: "2026"
+  orig: "en"
   type: "journal"
   authors: "Li, X., Kikuchi, A., Ohata, H., Nakata, Y. I., & Niikawa, T."
   title:
@@ -74,6 +78,7 @@
   url: ""
 
 - year: "2023"
+  orig: "en"
   type: "journal"
   authors: "Gardiner, G., Lee, D. I., Baranski, E., Funder, D. C., & Members of the International Situations Project"
   title:
@@ -84,6 +89,7 @@
   url: ""
 
 - year: "2023"
+  orig: "en"
   type: "journal"
   authors: "Baranski, E., Sweeny, K., Gardiner, G., Members of the International Situations Project, & Funder, D. C."
   title:
@@ -174,6 +180,7 @@
   url: ""
 
 - year: "2020"
+  orig: "en"
   type: "journal"
   authors: "Gardiner, G., Lee, D., Baranski, E., Funder, D., & Members of the International Situations Project"
   title:
@@ -184,6 +191,7 @@
   url: ""
 
 - year: "2020"
+  orig: "en"
   type: "journal"
   authors: "Lee, D. I., Gardiner, G., Baranski, E., Members of the International Situations Project, & Funder, D. C."
   title:
