@@ -22,7 +22,8 @@
   form_url: ""
   csv_url: ""
   download_url: ""
-  detail: false
+  # 詳細ページは programs/temer-plus.html・en/programs/temer-plus.html（更新情報つき）
+  detail: true
   wip: false
 
 - id: "affinity-mapping-studio"

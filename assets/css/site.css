@@ -197,3 +197,15 @@ section.block:last-child { border-bottom: 0; }
   .hero-fields { justify-content: center; }
   .btn-row { justify-content: center; }
 }
+
+/* 更新情報（/programs/temer-plus/）。データは _data/temer_changelog.json */
+.changelog-heading { margin-top: 36px; }
+.changelog-note { color: var(--muted); font-size: .9em; }
+.changelog h3 { margin: 24px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); font-size: 1.05em; }
+.changelog ul { margin: 0; padding-left: 1.2em; }
+.changelog li { margin-bottom: 10px; }
+.changelog-detail { color: var(--muted); font-size: .92em; }
+.changelog-kind { display: inline-block; min-width: 4.5em; margin-right: 4px; padding: 0 6px; border-radius: 4px; font-size: .8em; font-weight: 700; text-align: center; color: #fff; }
+.changelog-kind-new { background: #1a7f37; }
+.changelog-kind-improved { background: var(--accent); }
+.changelog-kind-fixed { background: #9a6700; }

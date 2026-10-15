@@ -1,0 +1,38 @@
+---
+layout: page
+lang: ja
+ref: program-temer-plus
+title: "TEMerPlus"
+subtitle: "複線径路等至性モデル（TEM）の作図ツール"
+permalink: /programs/temer-plus/
+---
+{%- comment -%}
+  更新情報は _data/temer_changelog.json から表示する。このファイルは TEMerPlus リポジトリの
+  webApp/src/data/changelog.json が正本で、TEMerPlus 側の `npm run changelog` が写す（ここで直接直さない）
+{%- endcomment -%}
+{% assign prog = site.data.programs | where: "id", "temer-plus" | first %}
+
+<p>{{ prog.summary.ja }}インストールもアカウント登録も不要で、<strong>Chrome または Edge</strong> で開くだけで使えます。図のデータは手元のブラウザの中だけで処理され、サーバーへは送られません。</p>
+
+<div class="btn-row">
+  <a class="btn" href="{{ prog.app_url }}" target="_blank" rel="noopener">TEMerPlus を開く</a>
+  <a class="btn ghost" href="{{ prog.tutorial_url | relative_url }}">講習会資料（TEA 2026）</a>
+  <a class="btn ghost" href="{{ prog.repo_url }}" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn ghost" href="{{ '/bibliography/' | relative_url }}?software={{ prog.id }}">研究事例</a>
+</div>
+
+<h2 class="changelog-heading">更新情報</h2>
+
+<p class="changelog-note">アプリの「ヘルプ」タブの「更新情報」でも同じ内容を見られます。</p>
+
+<div class="changelog">
+{% for e in site.data.temer_changelog %}
+  {% assign d = e.date | split: "-" %}
+  <h3>{{ d[0] }}年{{ d[1] | plus: 0 }}月{{ d[2] | plus: 0 }}日</h3>
+  <ul>
+  {% for it in e.items %}
+    <li><span class="changelog-kind changelog-kind-{% case it.kind %}{% when '新機能' %}new{% when '改善' %}improved{% else %}fixed{% endcase %}">{{ it.kind }}</span> <strong>{{ it.title }}</strong>{% if it.detail %}<br><span class="changelog-detail">{{ it.detail }}</span>{% endif %}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+</div>
