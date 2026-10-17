@@ -35,12 +35,14 @@
     en: "A desktop app (Tauri 2) for affinity diagramming and qualitative data mapping."
   tags: ["TypeScript", "Tauri", "質的研究"]
   app_url: ""
-  tutorial_url: ""
+  # はじめてのガイド（画像つき）。英語ページは tutorial_url_en を使う
+  tutorial_url: "https://github.com/YukiInoueNakata/affinity-mapping-studio/blob/main/docs/getting-started.ja.md"
+  tutorial_url_en: "https://github.com/YukiInoueNakata/affinity-mapping-studio/blob/main/docs/getting-started.en.md"
   repo_url: "https://github.com/YukiInoueNakata/affinity-mapping-studio"
   # 研究事例フォーム（ツールごと）。setup スクリプト docs/bibliography_form_setup.gs で生成する
   form_url: ""
   csv_url: ""
-  download_url: ""
+  download_url: "https://github.com/YukiInoueNakata/affinity-mapping-studio/releases/latest"
   detail: false
   wip: false
 
