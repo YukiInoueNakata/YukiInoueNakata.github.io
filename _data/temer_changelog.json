@@ -22,11 +22,11 @@
       },
       {
         "kind": "改善",
-        "title": "表記方針を 9 項目に",
-        "detail": "論文用レポートの表記方針に、矢印の距離・Box の横幅・Box の高さ・Box の形状を足しました。",
+        "title": "表記方針を 11 項目に",
+        "detail": "論文用レポートの表記方針に、矢印の距離・Box の横幅・Box の高さ・Box の形状・フォント装飾・テキスト配置を足しました。",
         "en": {
-          "title": "Nine items in the visual conventions",
-          "detail": "Arrow length, box width, box height and box shape were added to the visual conventions in the paper report."
+          "title": "Eleven items in the visual conventions",
+          "detail": "Arrow length, box width, box height, box shape, font decoration and text alignment were added to the visual conventions in the paper report."
         }
       },
       {
