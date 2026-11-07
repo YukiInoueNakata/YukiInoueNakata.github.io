@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-08",
+    "items": [
+      {
+        "kind": "改善",
+        "title": "Mac ではショートカットを ⌘ で表示",
+        "detail": "ボタンやコマンドパレットのショートカットを、Mac では「⌘Z」「⇧⌘S」のように表示します。やり直しは Mac では ⇧⌘Z です。",
+        "en": {
+          "title": "Shortcuts shown with ⌘ on Mac",
+          "detail": "On a Mac, shortcuts on buttons and in the command palette are shown as ⌘Z, ⇧⌘S and so on. Redo is ⇧⌘Z on a Mac."
+        }
+      },
+      {
+        "kind": "修正",
+        "title": "Shift を使うショートカットが効かないことがある",
+        "detail": "やり直し（Ctrl+Shift+Z）などが、Shift や Caps Lock の状態によって効きませんでした。",
+        "en": {
+          "title": "Shortcuts with Shift sometimes did not work",
+          "detail": "Redo (Ctrl+Shift+Z) and similar shortcuts could fail depending on Shift or Caps Lock."
+        }
+      },
+      {
+        "kind": "修正",
+        "title": "ブラウザによって Box の文字の折り返しが変わる",
+        "detail": "Chrome・Edge は行の端のかっこ（「」）を詰めて表示し、Safari とは折り返しが変わることがありました。どのブラウザでも詰めない表示にそろえました。",
+        "en": {
+          "title": "Box text wrapped differently across browsers",
+          "detail": "Chrome and Edge squeezed brackets at line ends, so text could wrap differently from Safari. All browsers now keep the brackets unsqueezed."
+        }
+      }
+    ]
+  },
+  {
     "date": "2026-11-07",
     "items": [
       {
