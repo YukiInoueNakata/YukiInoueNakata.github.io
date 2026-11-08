@@ -17,6 +17,9 @@
   tags: ["TypeScript", "TEM", "質的研究"]
   app_url: "https://yukiinouenakata.github.io/temerplus/"
   tutorial_url: "/tea2026/"
+  # はじめてのガイド（画像つき・日英）。詳細ページの「はじめてのガイド」ボタンが使う（2026-11-08）
+  guide_url: "https://github.com/YukiInoueNakata/temerplus/blob/master/docs/getting-started.ja.md"
+  guide_url_en: "https://github.com/YukiInoueNakata/temerplus/blob/master/docs/getting-started.en.md"
   repo_url: "https://github.com/YukiInoueNakata/temerplus"
   # 研究事例フォーム（ツールごと）。setup スクリプト docs/bibliography_form_setup.gs で生成する
   form_url: ""

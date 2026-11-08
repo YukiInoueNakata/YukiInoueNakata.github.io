@@ -12,10 +12,11 @@ permalink: /en/programs/temer-plus/
 {%- endcomment -%}
 {% assign prog = site.data.programs | where: "id", "temer-plus" | first %}
 
-<p>{{ prog.summary.en }} No installation or account is needed: just open it in <strong>Chrome or Edge</strong>. Your diagrams are processed only in your own browser and are never sent to a server. The app's interface is currently in Japanese.</p>
+<p>{{ prog.summary.en }} No installation or account is needed: just open it in <strong>Chrome</strong> (Edge and Safari also work). Your diagrams are processed only in your own browser and are never sent to a server. The app's interface is currently in Japanese.</p>
 
 <div class="btn-row">
   <a class="btn" href="{{ prog.app_url }}" target="_blank" rel="noopener">Open TEMerPlus</a>
+  <a class="btn ghost" href="{{ prog.guide_url_en }}" target="_blank" rel="noopener">Getting started</a>
   <a class="btn ghost" href="{{ prog.repo_url }}" target="_blank" rel="noopener">GitHub</a>
   <a class="btn ghost" href="{{ '/en/bibliography/' | relative_url }}?software={{ prog.id }}">Studies using TEMerPlus</a>
 </div>

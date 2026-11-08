@@ -12,10 +12,11 @@ permalink: /programs/temer-plus/
 {%- endcomment -%}
 {% assign prog = site.data.programs | where: "id", "temer-plus" | first %}
 
-<p>{{ prog.summary.ja }}インストールもアカウント登録も不要で、<strong>Chrome または Edge</strong> で開くだけで使えます。図のデータは手元のブラウザの中だけで処理され、サーバーへは送られません。</p>
+<p>{{ prog.summary.ja }}インストールもアカウント登録も不要で、<strong>Chrome</strong>（Edge・Safari でも可）で開くだけで使えます。図のデータは手元のブラウザの中だけで処理され、サーバーへは送られません。</p>
 
 <div class="btn-row">
   <a class="btn" href="{{ prog.app_url }}" target="_blank" rel="noopener">TEMerPlus を開く</a>
+  <a class="btn ghost" href="{{ prog.guide_url }}" target="_blank" rel="noopener">はじめてのガイド</a>
   <a class="btn ghost" href="{{ prog.tutorial_url | relative_url }}">講習会資料（TEA 2026）</a>
   <a class="btn ghost" href="{{ prog.repo_url }}" target="_blank" rel="noopener">GitHub</a>
   <a class="btn ghost" href="{{ '/bibliography/' | relative_url }}?software={{ prog.id }}">研究事例</a>
