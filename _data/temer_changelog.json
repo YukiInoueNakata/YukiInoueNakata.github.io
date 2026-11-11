@@ -118,6 +118,15 @@
           "title": "The other window jumped when using a pop-out viewer",
           "detail": "With the transcript viewer in a separate window, each edit reset the zoom and position of the other window."
         }
+      },
+      {
+        "kind": "改善",
+        "title": "英語の用語を『TEAと質的探究用語集』（2025）に合わせる",
+        "detail": "英語の画面と論文用レポートで、実線・点線の径路を Solid-line trajectory・Dotted-line trajectory に、時期区分を Time division にしました（画面の短い表示は Period のまま）。古い名前（Solid path・Dashed path など）の CSV もそのまま取り込めます。",
+        "en": {
+          "title": "English terms follow the TEA glossary (2025)",
+          "detail": "Solid and dashed paths are now called solid-line and dotted-line trajectories, and periods are called time divisions in the term table and the paper report (the short on-screen label stays Period). CSV files using the old names (Solid path, Dashed path, etc.) still import."
+        }
       }
     ]
   },
