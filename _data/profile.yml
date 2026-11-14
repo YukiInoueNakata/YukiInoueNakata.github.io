@@ -37,14 +37,16 @@ bio_short:
 # 略歴（年表）出典: researchmap
 cv:
   ja:
-    - { year: "2015", text: "立命館大学大学院 文学研究科 人文学専攻 修了" }
-    - { year: "", text: "修士（文学）・博士（文学）（立命館大学）" }
-    - { year: "2020", text: "立命館大学 グローバル・イノベーション研究機構 研究員（〜2024年8月）" }
+    - { year: "2015", text: "立命館大学大学院 文学研究科 人文学専攻 博士課程前期課程 修了（修士（文学））" }
+    - { year: "2020", text: "立命館大学大学院 文学研究科 人文学専攻 博士課程後期課程 修了（博士（文学））" }
+    - { year: "2020", text: "立命館大学 OIC総合研究機構 専門研究員（〜2022年3月）" }
+    - { year: "2022", text: "立命館大学 グローバル・イノベーション研究機構（R-GIRO） 専門研究員（〜2024年8月）" }
     - { year: "2024", text: "神戸大学大学院 人文学研究科 特命助教（〜2025年3月）" }
     - { year: "2025", text: "立命館大学 総合心理学部 准教授（現職）" }
   en:
-    - { year: "2015", text: "Completed graduate studies, Graduate School of Letters, Ritsumeikan University" }
-    - { year: "", text: "M.A. and Ph.D. in Literature, Ritsumeikan University" }
-    - { year: "2020", text: "Researcher, Ritsumeikan Global Innovation Research Organization (–Aug 2024)" }
+    - { year: "2015", text: "M.A. in Literature, Master's Program (Humanities), Graduate School of Letters, Ritsumeikan University" }
+    - { year: "2020", text: "Ph.D. in Literature, Doctoral Program (Humanities), Graduate School of Letters, Ritsumeikan University" }
+    - { year: "2020", text: "Senior Researcher, OIC Research Organization, Ritsumeikan University (–Mar 2022)" }
+    - { year: "2022", text: "Senior Researcher, Ritsumeikan Global Innovation Research Organization (R-GIRO) (–Aug 2024)" }
     - { year: "2024", text: "Specially Appointed Assistant Professor, Graduate School of Humanities, Kobe University (–Mar 2025)" }
     - { year: "2025", text: "Associate Professor, College of Comprehensive Psychology, Ritsumeikan University (present)" }

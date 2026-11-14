@@ -23,7 +23,7 @@ education:
 # 教育歴（機関・期間・担当科目）新しい順。出典: 履歴・業績書「教育業績」
 teaching:
   - { pja: "2025年4月〜現在", pen: "Apr 2025–present", inst_ja: "立命館大学大学院 人間科学研究科", inst_en: "Graduate School of Human Science, Ritsumeikan University", subj_ja: "演習Ⅰ〜Ⅳ、対人援助学実習", subj_en: "Graduate Seminars; Practicum in Human Services" }
-  - { pja: "2024年9月〜現在", pen: "Sep 2024–present", inst_ja: "追手門学院大学 法学部", inst_en: "Faculty of Law, Otemon Gakuin University", subj_ja: "法と心理学", subj_en: "Law and Psychology" }
+  - { pja: "2024年9月〜2025年3月", pen: "Sep 2024–Mar 2025", inst_ja: "追手門学院大学 法学部", inst_en: "Faculty of Law, Otemon Gakuin University", subj_ja: "法と心理学", subj_en: "Law and Psychology" }
   - { pja: "2023・2024年度（秋セメスター）", pen: "AY2023 & 2024 (Fall)", inst_ja: "立命館大学大学院 法務研究科（法科大学院）", inst_en: "Graduate School of Law (Law School), Ritsumeikan University", subj_ja: "法と心理", subj_en: "Law and Psychology" }
   - { pja: "2020年4月〜現在", pen: "Apr 2020–present", inst_ja: "立命館大学 総合心理学部", inst_en: "College of Comprehensive Psychology, Ritsumeikan University", subj_ja: "心理学史（2020〜）、司法・犯罪心理学（2020）、教養ゼミナール（2021・2022・2024）、社会の中の心理学・専門演習・海外フィールドスタディ・総合心理学特殊講義・卒業研究（2025〜）、基礎演習・国内フィールドスタディ（2026〜）", subj_en: "History of Psychology (2020–); Forensic & Criminal Psychology (2020); Liberal-Arts Seminar (2021, 2022, 2024); Psychology in Society, Advanced Seminars, Overseas Field Study, Special Lectures, Graduation Research (2025–); Basic Seminar & Domestic Field Study (2026–)" }
   - { pja: "2020年4月〜現在", pen: "Apr 2020–present", inst_ja: "東亜大学 人間科学部 心理臨床・子ども学科", inst_en: "Dept. of Clinical Psychology and Child Studies, Faculty of Human Sciences, University of East Asia", subj_ja: "司法・犯罪心理学（集中講義）", subj_en: "Forensic & Criminal Psychology (intensive course)" }
